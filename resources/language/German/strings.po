@@ -1,0 +1,270 @@
+# Kodi Media Center language file
+# Addon Name: xStream
+# Addon id: plugin.video.xstream
+# Addon Provider: xStream-Team
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: https://forum.kodi.tv/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Team-Kodi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Debug-Mode"
+msgstr "Debug-Modus"
+
+msgctxt "#30001"
+msgid "Video-Player"
+msgstr "Video-Player"
+
+msgctxt "#30002"
+msgid "Preferred language"
+msgstr "Bevorzugte Sprache"
+
+msgctxt "#30003"
+msgid "Show XXX-Content for adult users"
+msgstr "XXX-Inhalte für volljährige Benutzer anzeigen"
+
+msgctxt "#30004"
+msgid "Use metahandler"
+msgstr "Metahandler verwenden"
+
+msgctxt "#30005"
+msgid "Hoster selection"
+msgstr "Hosterauswahl"
+
+msgctxt "#30006"
+msgid "Cachetime for websites in seconds"
+msgstr "Cachezeit für Webseiten in Sekunden"
+
+msgctxt "#30007"
+msgid "Maximum number in hosterlist"
+msgstr "Maximale Anzahl in der Hosterliste"
+
+msgctxt "#30008"
+msgid "Metahandler replaces information of websites"
+msgstr "Metahandler ersetzt Informationen der Webseiten"
+
+msgctxt "#30009"
+msgid "Pre-validate and sort hosterlist (slow on weak systems)"
+msgstr "Hosterliste prüfen und sortieren (langsam auf schwachen Systemen)"
+
+msgctxt "#30010"
+msgid "Auto-Update for xStream"
+msgstr "Auto-Update für xStream"
+
+msgctxt "#30011"
+msgid "Global Search at first position"
+msgstr "Globale Suche an erster Position"
+
+msgctxt "#30012"
+msgid "Show centralized Settings"
+msgstr "Zentralisierte Einstellungen anzeigen"
+
+msgctxt "#30013"
+msgid "Prefered Auto-Play quality (if available)"
+msgstr "Bevorzugte Qualität bei Auto-Play Funktion"
+
+msgctxt "#30014"
+msgid "Timeout for HTTP requests in seconds"
+msgstr "Timeout für HTTP-Anfragen in Sekunden"
+
+msgctxt "#30015"
+msgid "Auto-Update for URLResolver"
+msgstr "Auto-Update für URLResolver"
+
+msgctxt "#30020"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "#30021"
+msgid "Site-Plugins"
+msgstr "Indexseiten"
+
+msgctxt "#30022"
+msgid "Views"
+msgstr "Ansichten"
+
+msgctxt "#30023"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#30024"
+msgid "Accounts"
+msgstr "Konten"
+
+msgctxt "#30030"
+msgid "Update"
+msgstr "Update"
+
+msgctxt "#30031"
+msgid "Presentation"
+msgstr "Darstellung"
+
+msgctxt "#30032"
+msgid "Content"
+msgstr "Inhalt"
+
+msgctxt "#30033"
+msgid "Metadata"
+msgstr "Metadaten"
+
+msgctxt "#30034"
+msgid "Hoster"
+msgstr "Hoster"
+
+msgctxt "#30035"
+msgid "Network"
+msgstr "Netzwerk"
+
+msgctxt "#30040"
+msgid "Global Search"
+msgstr "Globale Suche"
+
+msgctxt "#30041"
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgctxt "#30042"
+msgid "xStream-Settings"
+msgstr "xStream-Einstellungen"
+
+msgctxt "#30043"
+msgid "URLResolver-Settings"
+msgstr "URLResolver-Einstellungen"
+
+msgctxt "#30044"
+msgid "Metahandler-Settings"
+msgstr "Metahandler-Einstellungen"
+
+msgctxt "#30050"
+msgid "Use Site-Plugin"
+msgstr "Site-Plugin verwenden"
+
+msgctxt "#30051"
+msgid "Select Domain"
+msgstr "Domain auswählen"
+
+msgctxt "#30052"
+msgid "Use for Global Search"
+msgstr "Für Globale Suche benutzen"
+
+msgctxt "#30060"
+msgid "Use automatically generated views"
+msgstr "Automatisch erzeugte Ansichten verwenden"
+
+msgctxt "#30061"
+msgid "Default-View"
+msgstr "Standard-Ansicht"
+
+msgctxt "#30062"
+msgid "Movie-View"
+msgstr "Film-Ansicht"
+
+msgctxt "#30063"
+msgid "Series-View"
+msgstr "Serien-Ansicht"
+
+msgctxt "#30064"
+msgid "Season-View"
+msgstr "Staffel-Ansicht"
+
+msgctxt "#30065"
+msgid "Episode-View"
+msgstr "Episoden-Ansicht"
+
+msgctxt "#30070"
+msgid "JDownloader"
+msgstr "JDownloader"
+
+msgctxt "#30071"
+msgid "JDownloader on/off"
+msgstr "JDownloader an/aus"
+
+msgctxt "#30072"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "#30073"
+msgid "Port"
+msgstr "Port"
+
+msgctxt "#30074"
+msgid "Start download automatically"
+msgstr "Download automatisch starten"
+
+msgctxt "#30075"
+msgid "Send to LinkGrabber only"
+msgstr "Sende nur an LinkGrabber"
+
+msgctxt "#30076"
+msgid "JDownloader2"
+msgstr "JDownloader2"
+
+msgctxt "#30077"
+msgid "JDownloader2 on/off"
+msgstr "JDownloader2 an/aus"
+
+msgctxt "#30080"
+msgid "Kodi-Download"
+msgstr "Kodi-Download"
+
+msgctxt "#30081"
+msgid "Download-Folder"
+msgstr "Download-Verzeichnis"
+
+msgctxt "#30082"
+msgid "PyLoad on/off"
+msgstr "PyLoad an/aus"
+
+msgctxt "#30083"
+msgid "Username"
+msgstr "Benutzername"
+
+msgctxt "#30084"
+msgid "Password"
+msgstr "Passwort"
+
+msgctxt "#30302"
+msgid "Seasons german"
+msgstr "Staffeln Deutsch"
+
+msgctxt "#30303"
+msgid "Seasons english"
+msgstr "Staffeln Englisch"
+
+msgctxt "#30304"
+msgid "Search"
+msgstr "Suche"
+
+msgctxt "#30305"
+msgid "Season %s"
+msgstr "Staffel %s"
+
+msgctxt "#30306"
+msgid "%s to %s second"
+msgstr "%s bis %s Sekunde"
+
+msgctxt "#30307"
+msgid "Play all"
+msgstr "Alle abspielen"
+
+msgctxt "#30308"
+msgid "Waiting time"
+msgstr "Wartezeit"
+
+msgctxt "#30309"
+msgid "Please wait %s seconds"
+msgstr "Bitte warte %s Sekunden"
+
+msgctxt "#30402"
+msgid "Countries"
+msgstr "Länder"
+
