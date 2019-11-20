@@ -220,6 +220,18 @@ msgctxt "#30084"
 msgid "Password"
 msgstr ""
 
+msgctxt "#30090"
+msgid "My.JDownloader"
+msgstr ""
+
+msgctxt "#30091"
+msgid "My.JDownloader on/off"
+msgstr ""
+
+msgctxt "#30092"
+msgid "Device Name"
+msgstr ""
+
 msgctxt "#30302"
 msgid "Seasons german"
 msgstr ""

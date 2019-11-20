@@ -157,6 +157,11 @@
     <setting default="false" id="jd2_enabled" label="30077" type="bool" />
     <setting default="127.0.0.1" enable="!eq(-1,false)" id="jd2_host" label="30072" type="text" />
     <setting default="9666" enable="!eq(-2,false)" id="jd2_port" label="30073" type="number" />
+    <setting label="30090" type="sep" />
+    <setting default="false" id="myjd_enabled" label="30091" type="bool" />
+    <setting default="JDownloader@Device" enable="!eq(-1,false)" id="myjd_device" label="30092" type="text" />
+    <setting default="example@example.com" enable="!eq(-2,false)" id="myjd_user" label="30083" type="text" />
+    <setting default="" enable="!eq(-3,false)" id="myjd_pass" label="30084" option="hidden" type="text" />
     <setting type="sep" />
     <setting default="false" id="pyload_enabled" label="30082" type="bool" />
     <setting default="127.0.0.1" enable="!eq(-1,false)" id="pyload_host" label="30072" type="text" />

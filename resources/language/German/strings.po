@@ -223,6 +223,17 @@ msgctxt "#30084"
 msgid ""
 msgstr "Passwort"
 
+msgctxt "#30090"
+msgid "My.JDownloader"
+msgstr ""
+
+msgctxt "#30091"
+msgid "My.JDownloader an/aus"
+msgstr ""
+
+msgctxt "#30092"
+msgid "Geräte Name"
+msgstr ""
 
 msgctxt "#30302"
 msgid ""
