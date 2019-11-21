@@ -11,7 +11,7 @@ except:                         #For Python 2
     # from urllib import urlopen
 import base64
 import requests
-from Crypto.Cipher import AES
+from resources.lib import pyaes
 BS = 16
 
 class MYJDException(BaseException):
@@ -672,8 +672,9 @@ class Myjdapi:
         """
         init_vector = secret_token[:len(secret_token)//2]
         key = secret_token[len(secret_token)//2:]
-        decryptor = AES.new(key, AES.MODE_CBC, init_vector)
-        decrypted_data = UNPAD(decryptor.decrypt(base64.b64decode(data)))
+        decryptor = pyaes.Decrypter(pyaes.AESModeOfOperationCBC(key, init_vector))
+        decrypted_data = decryptor.feed(base64.b64decode(data))
+        decrypted_data += decryptor.feed()
         return decrypted_data
 
     def __encrypt(self,secret_token,data):
@@ -684,10 +685,14 @@ class Myjdapi:
         :param data:
         """
         data = PAD(data.encode('utf-8'))
+        length = 16 - (len(data) % 16)
+        data += chr(length)*length
         init_vector = secret_token[:len(secret_token)//2]
         key = secret_token[len(secret_token)//2:]
-        encryptor = AES.new(key, AES.MODE_CBC, init_vector)
-        encrypted_data = base64.b64encode(encryptor.encrypt(data))
+        encryptor = pyaes.Encrypter(pyaes.AESModeOfOperationCBC(key, init_vector))
+        encrypted_data = encryptor.feed(data)
+        encrypted_data += encryptor.feed()
+        encrypted_data = base64.b64encode(encrypted_data)
         return encrypted_data.decode('utf-8')
 
     def update_request_id(self):
