@@ -124,6 +124,8 @@ def showHosters():
         for sUrl in aResult:
             if 'youtube' in sUrl:
                 continue
+            elif 'vod' in sUrl:
+                continue
             elif sUrl.startswith('//'):
                 sUrl = 'https:' + sUrl
             hoster = {'link': sUrl, 'name': cParser.urlparse(sUrl)}
