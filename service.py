@@ -1,26 +1,20 @@
 # -*- coding: utf-8 -*-
+
 import sys, os, json, re, xbmc, xbmcaddon, xbmcgui
 from xbmc import LOGDEBUG, LOGERROR
 
 AddonName = xbmcaddon.Addon().getAddonInfo('name')
-# xbmcaddon.Addon().getAddonInfo('id')
 
 if sys.version_info[0] == 2:
     from xbmc import translatePath
+
     NIGHTLY_VERSION_CONTROL = os.path.join(translatePath(xbmcaddon.Addon().getAddonInfo('profile')).decode('utf-8'), "update_sha")
     ADDON_PATH = translatePath(os.path.join('special://home/addons/', '%s')).decode('utf-8')
 else:
     from xbmcvfs import translatePath
+
     NIGHTLY_VERSION_CONTROL = os.path.join(translatePath(xbmcaddon.Addon().getAddonInfo('profile')), "update_sha")
     ADDON_PATH = translatePath(os.path.join('special://home/addons/', '%s'))
-
-
-def infoDialog(message, heading=AddonName, icon='', time=5000, sound=False):
-    if icon == '': icon = xbmcaddon.Addon().getAddonInfo('icon')
-    elif icon == 'INFO': icon = xbmcgui.NOTIFICATION_INFO
-    elif icon == 'WARNING': icon = xbmcgui.NOTIFICATION_WARNING
-    elif icon == 'ERROR': icon = xbmcgui.NOTIFICATION_ERROR
-    xbmcgui.Dialog().notification(heading, message, icon, time, sound=sound)
 
 def enableAddon(ADDONID):
     struktur = json.loads(xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.GetAddonDetails","id":1,"params": {"addonid":"%s", "properties": ["enabled"]}}' % ADDONID))
@@ -39,7 +33,6 @@ def enableAddon(ADDONID):
             except:
                 pass
 
-
 def checkDependence(ADDONID):
     isdebug = True
     if isdebug: xbmc.log(__name__ + ' - %s - checkDependence ' % ADDONID, xbmc.LOGDEBUG)
@@ -49,7 +42,7 @@ def checkDependence(ADDONID):
             xml = f.read()
         pattern = '(import.*?addon[^/]+)'
         allDependence = re.findall(pattern, str(xml))
-        #if isdebug: log_utils.log(__name__ + '%s - allDependence ' % str(allDependence), log_utils.LOGDEBUG)
+        # if isdebug: log_utils.log(__name__ + '%s - allDependence ' % str(allDependence), log_utils.LOGDEBUG)
         for i in allDependence:
             try:
                 if 'optional' in i or 'xbmc.python' in i: continue
@@ -66,18 +59,16 @@ def checkDependence(ADDONID):
     except Exception as e:
         xbmc.log(__name__ + '  %s - Exception ' % e, LOGERROR)
 
+
 if os.path.isfile(NIGHTLY_VERSION_CONTROL) == False or xbmcaddon.Addon().getSetting('DevUpdateAuto') == 'true' or xbmcaddon.Addon().getSetting('enforceUpdate') == 'true':
     from resources.lib import updateManager
-    status = updateManager.devAutoUpdates(True)
-    if status == True: infoDialog("Auto Update abgeschlossen", sound=False, icon='INFO', time=3000)
-    if status == False: infoDialog("Auto Update mit Fehler beendet", sound=True, icon='ERROR')
-    # if status == None: infoDialog("Keine neuen Updates gefunden", sound=False, icon='INFO', time=3000)
-    if xbmcaddon.Addon().getSetting('enforceUpdate') == 'true': xbmcaddon.Addon().setSetting('enforceUpdate', 'false')
+    updateManager.lookForUpdates(True)
 
 # "setting.xml" wenn notwendig Indexseiten aktualisieren
 try:
     if xbmcaddon.Addon().getSetting('newSetting') == 'true':
         from resources.lib.handler.pluginHandler import cPluginHandler
+
         cPluginHandler().getAvailablePlugins()
 except Exception:
     pass

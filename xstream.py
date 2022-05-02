@@ -11,7 +11,7 @@ import sys, xbmc, xbmcgui
 try:
     import resolveurl as resolver
 except ImportError:
-    xbmcgui.Dialog().ok('ResolveUrl Error', 'Sie haben keinen funktionierenden ResolveUrl installiert, es können keine Videos abgespielt werden bitte neu installieren.')
+    xbmcgui.Dialog().ok('ResolveUrl Error', 'Bitte installiere ResolveURL um Videos ansehen zu können')
 
 
 def run():
@@ -49,12 +49,13 @@ def parseUrl():
         elif sFunction == 'searchTMDB':
             searchTMDB(params)
             return
-        elif sFunction == 'devUpdates':
+        elif sFunction == 'manualUpdate':
             from resources.lib import updateManager
-            updateManager.devUpdates()
+            updateManager.lookForUpdates(False)
             return
     elif params.exist('remoteplayurl'):
         try:
+            #import urlresolver as resolver
             remotePlayUrl = params.getValue('remoteplayurl')
             sLink = resolver.resolve(remotePlayUrl)
             if sLink:
@@ -103,11 +104,12 @@ def parseUrl():
         oGui.updateDirectory()
     # If the resolver settings are called
     elif sSiteName == 'resolver':
+        #import urlresolver as resolver
         resolver.display_settings()
     # If UpdateManager are called (manual update)
-    elif sSiteName == 'devUpdates':
+    elif sSiteName == 'manualUpdate':
         from resources.lib import updateManager
-        updateManager.devUpdates()
+        updateManager.lookForUpdates(False)
     elif sSiteName == 'settings':
         oGui = cGui()
         for folder in settingsGuiElements():
@@ -156,13 +158,13 @@ def showMainMenu(sFunction):
         for folder in settingsGuiElements():
             oGui.addFolder(folder)
     # ka add - Create a gui element for updateManager
-    if cConfig().getSetting('DevUpdateAuto') == 'false':
-        oGuiElement = cGuiElement()
-        oGuiElement.setTitle('Nightly Update')
-        oGuiElement.setSiteName('devUpdates')
-        oGuiElement.setFunction(sFunction)
-        oGuiElement.setThumbnail('DefaultAddonProgram.png')
-        oGui.addFolder(oGuiElement)
+    #if cConfig().getSetting('DevUpdateAuto') == 'false':
+    oGuiElement = cGuiElement()
+    oGuiElement.setTitle(cConfig().getLocalizedString(30045))
+    oGuiElement.setSiteName('manualUpdate')
+    oGuiElement.setFunction(sFunction)
+    oGuiElement.setThumbnail('DefaultAddonProgram.png')
+    oGui.addFolder(oGuiElement)
     oGui.setEndOfDirectory()
 
 

@@ -136,6 +136,10 @@ msgctxt "#30044"
 msgid "Metahandler-Settings"
 msgstr ""
 
+msgctxt "#30045"
+msgid "Update"
+msgstr ""
+
 msgctxt "#30050"
 msgid "Use Site-Plugin"
 msgstr ""

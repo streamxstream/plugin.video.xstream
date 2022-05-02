@@ -1,0 +1,27 @@
+name: Commit to Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Removing development files
+        run: |
+          rm -rf .git
+          rm -rf .github
+          rm -f .gitignore
+          rm -f README.md
+      - name: Push to Release
+        uses: cpina/github-action-push-to-another-repository@devel
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.ACTION_TOKEN }}
+        with:
+          source-directory: .
+          destination-github-username: 'streamxstream'
+          destination-repository-name: 'plugin.video.xstream'
+          user-name: streamxstream
+          user-email: streamxstream@users.noreply.github.com
+          target-branch: release
