@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.xstream" name="xStream" version="3.5.32~nightly7" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="3.5.32~nightly8" provider-name="xStream-Team">
  <requires>
     <import addon="script.module.requests"/>
     <import addon="script.module.resolveurl" version="5.1.54"/>

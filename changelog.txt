@@ -1,3 +1,7 @@
+3.5.32~nightly8
+  02.05.2022
+- Update kinox
+
 3.5.32~nightly7
   01.05.2022
 - [kinoger] add hoster kinoger.pw
