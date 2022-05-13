@@ -21,28 +21,28 @@ Derzeit unterstützt die Version folgende Site Plugins:
 |  Site Plugin                       | Enthalten | Funktioniert | Login | Fehler Beschreibung   |
 |------------------------------------|:---------:|:------------:|:-----:|:---------------------:|
 | Anicloud                     		 | [x]       | [x]          | [x]   |        				|
-| Dokus4me                     		 | [x]       | [x]          |       |        				|
-| Filmpalast                     	 | [x]       | [x]          |       |        				|
-| Flimmerstube                     	 | [x]       | [x]          | [x]   |        				|
-| HD Filme.top                     	 | [x]       | [x]          |       |        				|
+| Dokus4me                     		 | [x]       | [x]          |       |        			    |
+| Filmpalast                     	 | [x]       | [x]          |       |        			    |
+| Flimmerstube                     	 | [x]       | [x]          | [x]   |        			    |
+| HD Filme.top                     	 | [x]       | [x]          |       |        			    |
 | Kinofox                     	     | [x]       | [x]          |       |        				|
 | KinoGer                     	     | [x]       | [x]          |       |						|
 | Kinokiste                          | [x]       | [x]          |       |						|
 | KinoKiste.tech                  	 | [x]       | [x]          |       |       			    |
 | Kinomax.me                         | [x]       | [x]          |       |                       |
-| Kinox                     	     | [x]       | [x]          |       | UTF8        			|
+| Kinox                     	     | [x]       | [x]          |       |         			    |
 | KKiste                     	     | [x]       | [x]          |       | Cloudflare ab und zu  |
-| MegaKino                       	 | [x]       | [x]          |       |        				|
-| Movie4k                        	 | [x]       | [x]          |       |               		|
+| MegaKino                        	 | [x]       | [x]          |       |        				|
+| Movie4k                         	 | [x]       | [x]          |       |               	    |
 | Movieking                     	 | [x]       | [x]          |       |        				|
 | Netzkino                       	 | [x]       | [x]          |       |        				|
-| Puranime                         |    [x]              |   [x]                  |       |               |
 | Serienstream                     	 | [x]       | [x]          | [x]   |        				|
 | Streamworld                     	 | [x]       | [x]          |       |        				|
-| xCine                              |  [x]      |              |       |               |
 
 ***
 
 [![Gitter](https://badges.gitter.im/streamxstream/community.svg)](https://gitter.im/streamxstream/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ### | [FAQ](https://github.com/streamxstream/xStream-FAQ/blob/master/xStream_Anleitung_FAQ.md)
+
+### | [Web Portal](https://streamxstream.github.io/xStreamRepoWeb/)

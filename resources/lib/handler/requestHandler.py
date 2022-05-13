@@ -19,7 +19,7 @@ except ImportError:
 
 
 class cRequestHandler:
-    def __init__(self, sUrl, caching=True, ignoreErrors=False, compression=True, jspost=False, ssl_verify=True):
+    def __init__(self, sUrl, caching=True, ignoreErrors=False, compression=True, jspost=False, ssl_verify=False):
         self._sUrl = sUrl
         self._sRealUrl = ''
         self._USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0'

@@ -54,10 +54,10 @@
 		<setting default="true" type="bool" id="global_search_kinoger" label="30052" enable="!eq(-1,false)" />
 		<setting default="kinoger.com" enable="!eq(-2,false)" id="kinoger-domain" label="30051" type="labelenum" values="kinoger.com|kinoger.to" />
 		<setting type="sep" />
-		<!--<setting type="lsep" label="KinoKiste" />
-		<setting default="false" type="bool" id="plugin_kinokiste" label="30050" />
-		<setting default="false" type="bool" id="global_search_kinokiste" label="30052" enable="!eq(-1,false)" />
-		<setting type="sep" />-->
+		<setting type="lsep" label="KinoKiste" />
+		<setting default="true" type="bool" id="plugin_kinokiste" label="30050" />
+		<setting default="true" type="bool" id="global_search_kinokiste" label="30052" enable="!eq(-1,false)" />
+		<setting type="sep" />
 		<setting type="lsep" label="Kinokiste Tech" />
 		<setting default="true" type="bool" id="plugin_kinokiste_tech" label="30050" />
 		<setting default="true" type="bool" id="global_search_kinokiste_tech" label="30052" enable="!eq(-1,false)" />
@@ -85,30 +85,19 @@
 		<setting default="true" type="bool" id="plugin_movieking" label="30050" />
 		<setting default="true" type="bool" id="global_search_movieking" label="30052" enable="!eq(-1,false)" />
 		<setting type="sep" />
-		<!--<setting type="lsep" label="MovieTown" />
-		<setting default="true" type="bool" id="plugin_movietown_org" label="30050" />
-		<setting default="true" type="bool" id="global_search_movietown_org" label="30052" enable="!eq(-1,false)" />
-		<setting type="sep" />-->
 		<setting type="lsep" label="NetzKino" />
 		<setting default="true" type="bool" id="plugin_netzkino" label="30050" />
-		<setting default="true" type="bool" id="global_search_netzkino" label="30052" enable="!eq(-1,false)" />
+		<setting default="false" type="bool" id="global_search_netzkino" label="30052" enable="!eq(-1,false)" />
 		<setting type="sep" />
-		<!--<setting type="lsep" label="Pureanime" />
-		<setting default="false" type="bool" id="plugin_pureanime" label="30050" />
-		<setting default="false" type="bool" id="global_search_pureanime" label="30052" enable="!eq(-1,false)" />
-		<setting type="sep" />-->
 		<setting type="lsep" label="SerienStream" />
 		<setting default="true" type="bool" id="plugin_serienstream_to" label="30050" />
-		<setting default="true" type="bool" id="global_search_serienstream_to" label="30052" enable="!eq(-1,false)" />
+		<setting default="false" type="bool" id="global_search_serienstream_to" label="30052" enable="!eq(-1,false)" />
+		<setting default="s.to" enable="!eq(-2,false)" id="serienstream_to-domain" label="30051" type="labelenum" values="s.to|serienstream.to|serien.cam|190.115.18.20" />
 		<setting type="sep" />
 		<setting type="lsep" label="Streamworld" />
 		<setting default="true" type="bool" id="plugin_streamworld" label="30050" />
 		<setting default="true" type="bool" id="global_search_streamworld" label="30052" enable="!eq(-1,false)" />
 		<setting type="sep" />
-		<!--<setting type="lsep" label="XCine" />
-		<setting default="false" type="bool" id="plugin_xcine" label="30050" />
-		<setting default="false" type="bool" id="global_search_xcine" label="30052" enable="!eq(-1,false)" />
-		<setting type="sep" />-->
 	</category>
     <category label="TMDB">
 		<setting type="sep" />
@@ -168,10 +157,6 @@
 		<setting label="SerienStream" type="lsep" />
 		<setting default="" id="serienstream.user" label="30083" type="text" />
 		<setting default="" id="serienstream.pass" label="30084" option="hidden" type="text" />
-    <setting type="sep" />	
-	<!--    <setting label="Pureanime" type="lsep" />
-		<setting default="" id="pureanime.user" label="30083" type="text" />
-		<setting default="" id="pureanime.pass" label="30084" option="hidden" type="text" />
-		<setting type="sep" />-->
+		<setting type="sep" />	
 	</category> 
 </settings>

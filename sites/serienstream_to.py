@@ -34,11 +34,11 @@ URL_LOGIN = URL_MAIN + '/login'
 def load():
     logger.info('Load %s' % SITE_NAME)
     params = ParameterHandler()
-    if proxy == 'true':
-        pass
-    else:
-        params.setParam('sUrl', URL_SERIES)
-        cGui().addFolder(cGuiElement('Alle Serien', SITE_IDENTIFIER, 'showAllSeries'), params)
+#    if proxy == 'true':
+#        pass
+#    else:
+    params.setParam('sUrl', URL_SERIES)
+    cGui().addFolder(cGuiElement('Alle Serien', SITE_IDENTIFIER, 'showAllSeries'), params)
 
     params.setParam('sUrl', URL_NEW_SERIES)
     cGui().addFolder(cGuiElement('Neue Serien', SITE_IDENTIFIER, 'showEntries'), params)
@@ -51,10 +51,10 @@ def load():
     cGui().addFolder(cGuiElement('A-Z', SITE_IDENTIFIER, 'showValue'), params)
     params.setParam('sCont', 'homeContentGenresList')
     cGui().addFolder(cGuiElement('Genre', SITE_IDENTIFIER, 'showValue'), params)
-    if proxy == 'true':
-        pass
-    else:
-        cGui().addFolder(cGuiElement('Suche', SITE_IDENTIFIER, 'showSearch'), params)
+#    if proxy == 'true':
+#        pass
+#    else:
+    cGui().addFolder(cGuiElement('Suche', SITE_IDENTIFIER, 'showSearch'), params)
 
     #cGui().addFolder(cGuiElement('[COLOR red]Bei Problemen hier Domain ändern[/COLOR]', SITE_IDENTIFIER, 'checkDomain'))
     cGui().setEndOfDirectory()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.xstream" name="xStream" version="3.5.32~nightly8" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="3.5.33~nightly1" provider-name="xStream-Team">
  <requires>
     <import addon="script.module.requests"/>
     <import addon="script.module.resolveurl" version="5.1.54"/>
@@ -21,14 +21,34 @@
    <license>GNU GPLv3</license>
    <platform>all</platform>
    <news>
-Repository Release 3.5.31
-
-- Restart nach xStream Shut Down
-- xStream Stand 3.5.29
-
-Nightly Version
-
-- siehe Changelog
+Release 3.5.32
+   05.05.2022
+   Update:
+ - Serienstream: Menüpunkte Suche und Alle Serien wieder hinzugefügt bei Auswahl des Proxies
+ - Update kinox
+ - [kinoger] add hoster kinoger.pw
+ - [kinox] add auto domain check
+ - [general] Meldung bei nicht funktionierenden ResolveUrl
+ - [requestHandler] diverse Optimierungen
+ - [requestHandler] Zensurmeldung "Anleitung"
+ - Fix Serienstream Eintrag Alle Serien
+ - Fix kkiste, movie4click invalid hosters  (thx @dxsdev0)
+ - Update Flimmerstube
+ - settings.xml update
+ - Update kkiste domian  (thx @heptamer)
+ - SSL Fix (thx @heptamer)
+ - HD Filme.top (thx @heptamer)
+ - Update kinox settings.xml
+ - Update movie4k domain
+ 
+   Neue: 
+ - kinomax.me
+ 
+  Entfernt:
+ - movie4k.space 
+ - xCine
+ - Pureanime
+ - Movietown
    </news>
    <assets>
      <icon>icon.png</icon>

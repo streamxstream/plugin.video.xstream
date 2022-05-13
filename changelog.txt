@@ -1,48 +1,35 @@
-3.5.32~nightly8
-  02.05.2022
-- Update kinox
+3.5.33~nightly1
+- [xcine] add site
 
-3.5.32~nightly7
-  01.05.2022
-- [kinoger] add hoster kinoger.pw
-- [kinox] add auto domain check
-- [general] Meldung bei nicht funktionierenden ResolveUrl
-- [requestHandler] diverse optimierungen
-- [requestHandler]  Zensurmeldung "Anleitung"
-
-3.5.32~nightly6
-  29.04.2022
+3.5.32
+   05.05.2022
+   Update:
+ - Serienstream: Menüpunkte Suche und Alle Serien wieder hinzugefügt bei Auswahl des Proxies
+ - Update kinox
+ - [kinoger] add hoster kinoger.pw
+ - [kinox] add auto domain check
+ - [general] Meldung bei nicht funktionierenden ResolveUrl
+ - [requestHandler] diverse Optimierungen
+ - [requestHandler] Zensurmeldung "Anleitung"
  - Fix Serienstream Eintrag Alle Serien
- - Fix kkiste, movie4click invalid hosters  thx @dxsdev0
- - Neues Plugin kinomax.me
-
-3.5.32~nightly5
-  29.04.2022
+ - Fix kkiste, movie4click invalid hosters  (thx @dxsdev0)
  - Update Flimmerstube
-
-3.5.32~nightly4
-  26.04.2022
- - Flimmerstube Info update
  - settings.xml update
-
-3.5.32~nightly3
-  25.04.2022
- - Update kkiste domian  thx @heptamer
- - SSL Fix thx @heptamer
- - HD Filme.top thx @heptamer
- - settings.xml update
- 
-3.5.32~nightly2
-  24.04.2022
+ - Update kkiste domian  (thx @heptamer)
+ - SSL Fix (thx @heptamer)
+ - HD Filme.top (thx @heptamer)
  - Update kinox settings.xml
  - Update movie4k domain
- - movie4k.space entfernt
- - xCine deaktiviert
-
-3.5.32~nightly1
-  24.04.2022
- - Update kinox
-
+ 
+   Neue: 
+ - kinomax.me
+ 
+  Entfernt:
+ - movie4k.space 
+ - xCine
+ - Pureanime
+ - Movietown
+ 
 3.5.31
 - Restart nach xStream Shut Down
 - xStream Stand 3.5.29

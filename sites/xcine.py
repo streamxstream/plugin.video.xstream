@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# 2022-01-13
-
 from resources.lib.handler.ParameterHandler import ParameterHandler
 from resources.lib.handler.requestHandler import cRequestHandler
 from resources.lib.tools import logger, cParser
@@ -15,7 +12,7 @@ URL_MAIN = 'https://xcine.me/'
 URL_MOVIES = URL_MAIN + 'filme1?'
 URL_SHOWS = URL_MAIN + 'serien1?'
 URL_SEARCH = URL_MAIN + 'search?key=%s'
-SITE_GLOBAL_SEARCH = False # ka temp.
+
 
 def load():
     logger.info('Load %s' % SITE_NAME)
@@ -124,8 +121,8 @@ def showEpisodes():
     params = ParameterHandler()
     sUrl = cParser.urlEncode(params.getValue('entryUrl'), ':|/') + '/folge-1'
     sThumbnail = params.getValue('sThumbnail')
-    sHtmlContent = cRequestHandler(sUrl).request()
-    pattern = 'data-episode-id="([\d]+).*?folge.*?([\d]+)'
+    sHtmlContent = cRequestHandler(sUrl, caching=False).request()
+    pattern = '<a[^>]class="(?:current|new)".*? href="([^"]+).*?data-episode-id="(\d+)".*?folge.*?([\d]+)'
     isMatch, aResult = cParser.parse(sHtmlContent, pattern)
     isMatch, sID = cParser.parse(sHtmlContent, 'data-movie-id="([\d]+)')
     if not isMatch:
@@ -133,11 +130,12 @@ def showEpisodes():
         return
 
     total = len(aResult)
-    for eID, eNr in aResult:
+    for sUrl, eID, eNr in aResult:
         oGuiElement = cGuiElement('Folge ' + eNr, SITE_IDENTIFIER, 'showHosters')
         oGuiElement.setThumbnail(sThumbnail)
         params.setParam('eID', eID)
         params.setParam('sID', sID[0])
+        params.setParam('entryUrl', sUrl)
         cGui().addFolder(oGuiElement, params, False, total)
     cGui().setView('episodes')
     cGui().setEndOfDirectory()
@@ -147,48 +145,51 @@ def showHosters():
     hosters = []
     eID = ParameterHandler().getValue('eID')
     sID = ParameterHandler().getValue('sID')
-    rUrl = ParameterHandler().getValue('entryUrl')
-    sUrl = cParser.urlEncode(ParameterHandler().getValue('entryUrl'), ':|/') + '/deutsch'
-    if not eID and not sID:
-        oRequest = cRequestHandler(sUrl)
-        oRequest.addHeaderEntry('Origin', URL_MAIN)
-        oRequest.addHeaderEntry('Referer', sUrl)
-        sHtmlContent = oRequest.request()
-        pattern = 'data-movie-id="(\d+).*?data-episode-id="(\d+)"'
-        isMatch, aResult = cParser().parse(sHtmlContent, pattern)
-        if isMatch:
-            sID = aResult[0][0]
-            eID = aResult[0][1]
+    sUrl = cParser.urlEncode(ParameterHandler().getValue('entryUrl'), ':|/')
+    if 'folge-' not in sUrl:
+        sUrl = sUrl + '/deutsch'
 
-    oRequest = cRequestHandler(URL_MAIN + 'movie/load-stream/' + sID + '/' + eID + '?')
-    oRequest.addHeaderEntry('X-Requested-With', 'XMLHttpRequest')
-    oRequest.addHeaderEntry('Referer', rUrl)
-    sHtmlContentBase = oRequest.request()
-    isMatch, hUrl = cParser().parse(sHtmlContentBase, 'urlVideo = "([^"]+)')
+    oRequest = cRequestHandler(sUrl, caching=False)
+    oRequest.addHeaderEntry('Upgrade-Insecure-Requests', '1')
+    sHtmlContent = oRequest.request()
+    Cookie = oRequest.getResponseHeader()
+    pattern = '(PHPSESSID=[^;]+).*?(SERVERID=[^;]+)'
+    isMatch, Cookie = cParser().parse(str(Cookie), pattern)
+
+    coo, sig = get_data(sHtmlContent)
+    if isMatch and coo and Cookie:
+        sig = sig.split('=')
+
+    if not eID and not sID:
+        pattern = 'data-movie-id="(\d+).*?data-episode-id="(\d+)"'
+        isMatch, dataID = cParser().parse(sHtmlContent, pattern)
+        sID = dataID[0][0]
+        eID = dataID[0][1]
 
     if isMatch:
-        oRequest = cRequestHandler(hUrl[0])
+        oRequest = cRequestHandler(URL_MAIN + 'movie/load-stream/' + sID + '/' + eID + '?', caching=False)
+        oRequest.addHeaderEntry('X-Requested-With', 'XMLHttpRequest')
         oRequest.addHeaderEntry('Referer', sUrl)
-        oRequest.addHeaderEntry('Origin', URL_MAIN)
+        oRequest.addHeaderEntry('Origin', 'https://xcine.me')
+        oRequest.addHeaderEntry('Cookie', Cookie[0][0] + ';' + Cookie[0][1] + ';' + coo[0])
+        oRequest.addParameters(sig[0], sig[1])
         sHtmlContent = oRequest.request()
-        m3u8_url =  hUrl[0]
-        m3u8_base_url = m3u8_url.rpartition('/')[0]
-        pattern = 'RESOLUTION=([0-9,x]+)([^#]+)'
-        isMatch, aResult = cParser().parse(sHtmlContent, pattern)
+        isMatch, aResult = cParser().parse(sHtmlContent, 'vip_source .*?;')
         if isMatch:
-            for sQualy, url in aResult:
-                if not 'http' in url: url = m3u8_base_url+'/'+ url
-                sUrl = url + '|Origin=https%3A%2F%2Fhdfilme.cx%2F&Referer=https%3A%2F%2Fhdfilme.cx%2F'
-                hoster = {'link': sUrl, 'name': sQualy}
+            isMatch, aResult = cParser().parse(aResult[0], 'file":"([^"]+).*?label":"([^"]+)')
+        if isMatch:
+            for sUrl, sQualy in aResult:
+                hoster = {'link': sUrl, 'name': sQualy, 'resolveable': True}
                 hosters.append(hoster)
-        if hosters:
-            hosters.append('getHosterUrl')
-        return hosters
-
+    if hosters:
+        hosters.append('getHosterUrl')
+    return hosters
 
 
 def getHosterUrl(sUrl=False):
+    sUrl = sUrl + '|Referer=https%3A%2F%2Fxcine.me%2F&User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A100.0%29+Gecko%2F20100101+Firefox%2F100.0'
     return [{'streamUrl': sUrl, 'resolved': True}]
+
 
 def showSearch():
     sSearchText = cGui().showKeyBoard()
@@ -199,3 +200,40 @@ def showSearch():
 
 def _search(oGui, sSearchText):
     showEntries(URL_SEARCH % cParser().quotePlus(sSearchText), oGui, sSearchText)
+
+
+def get_data(sHtmlContent):
+    import base64
+    pattern = '}</script><script>.*?<div class="footer1">'
+    isMatch, sContainer = cParser().parse(sHtmlContent, pattern)
+    if isMatch:
+        pattern = '"(_[^;]+);path'
+        isMatch, coo = cParser().parse(sContainer[0], pattern)
+        if not isMatch and sContainer:
+            pattern = '(?:window|atob).*?"([^"]+)'
+            isMatch, aResult = cParser().parse(sContainer[0], pattern)
+            if isMatch:
+                aResult = aResult[0]
+                if not aResult.endswith('='):
+                    aResult = aResult + '=='
+                aResult = base64.b64decode(aResult).decode()
+                pattern = '"(_[^;]+);path'
+                isMatch, coo = cParser().parse(aResult, pattern)
+    if isMatch:
+        pattern = "'server=3';.*?function"
+        isMatch, sHtmlContainer = cParser.parse(sHtmlContent, pattern)
+    if isMatch:
+        isMatch, K1 = cParser.parse(sHtmlContainer[0], 'loadStreamSV,.*?([a0-z9]+)')
+    if isMatch:
+        isMatch, K2 = cParser.parse(sHtmlContainer[0], 'var[^>]_.*?;')
+    if isMatch:
+        K2 = K2[0].replace(',', '').replace('];', '')
+        isMatch, K2 = cParser.parse(K2, '"([^"]+)')
+    if isMatch:
+        L = int(K2[int(len(K2)) - 2])
+        if len(str(L)) == 1 and str(L).isdigit():
+            K2 = str(K2[L].replace('\\', '').replace('x', ''))
+            K2 = bytearray.fromhex(K2).decode()
+            sig = str(K1[0] + '=' + K2)
+            return coo, sig
+    return '', ''
