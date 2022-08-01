@@ -342,8 +342,8 @@ def _search(oGui, sSearchText):
 
     oRequest = cRequestHandler(URL_SEARCH, caching=True)
     oRequest.addHeaderEntry('X-Requested-With', 'XMLHttpRequest')
-    oRequest.addHeaderEntry('Referer', 'https://s.to/search')
-    oRequest.addHeaderEntry('Origin', 'https://s.to')
+    oRequest.addHeaderEntry('Referer', URL_MAIN + '/search')
+    oRequest.addHeaderEntry('Origin', URL_MAIN)
     oRequest.addParameters('keyword', sSearchText)
 
     sHtmlContent = oRequest.request()
