@@ -3,6 +3,7 @@
 # Always pay attention to the translations in the menu!
 
 # 2022-12-06 Heptamer - Suchfunktion überarbeitet
+# 2022-12-10 suuhm - Erweiterte Metadata Suchfunktion hinzugefügt
 
 import xbmcgui
 import time
@@ -56,7 +57,10 @@ def load(): # Menu structure of the site plugin
         cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30517), SITE_IDENTIFIER, 'showValue'), params)    # From A-Z
         params.setParam('sCont', 'homeContentGenresList')
         cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30506), SITE_IDENTIFIER, 'showValue'), params)    # Genre
-        cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30520), SITE_IDENTIFIER, 'showSearch'), params)   # Search
+        if cConfig().getSetting('serienstream_to-advsearch'):
+            cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30520), SITE_IDENTIFIER, 'showSearchAdv'), params)   # Search
+        else:
+            cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30520), SITE_IDENTIFIER, 'showSearch'), params)   # Search
         cGui().setEndOfDirectory()
 
 
@@ -348,3 +352,91 @@ def SSsearch(sGui=False, sSearchText=False):
             oGui.addFolder(oGuiElement, params, True, total)
         if not sGui:
             oGui.setView('tvshows')
+
+#
+# Advanced Metadata Search
+#
+def showSearchAdv():
+    sSearchText = cGui().showKeyBoard()
+    if not sSearchText: return
+    _searchAdv(False, sSearchText)
+    cGui().setEndOfDirectory()
+
+
+def _searchAdv(oGui, sSearchText):
+    SSsearchAdv(oGui, sSearchText)
+
+
+def SSsearchAdv(sGui, sSearchText):
+    from json import loads
+    #import xbmc, sys
+    oGui = cGui()
+    params = ParameterHandler()
+    params.getValue('sSearchText')
+
+    oRequest = cRequestHandler(URL_SERIES, caching=True, ignoreErrors=(sGui is not False))
+    oRequest.addHeaderEntry('X-Requested-With', 'XMLHttpRequest')
+    oRequest.addHeaderEntry('Referer', 'https://s.to/serien')
+    oRequest.addHeaderEntry('Origin', 'https://s.to')
+    oRequest.addHeaderEntry('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
+    oRequest.addHeaderEntry('Upgrade-Insecure-Requests', '1')
+
+    sHtmlContent = oRequest.request()
+    if not sHtmlContent:
+            return
+
+    sst = sSearchText.lower()
+    #xbmc.log(str(sHtmlContent),2)
+
+    pattern = '<li><a data.+?href="([^"]+)".+?">(.*?)\<\/a><\/l' #link - title
+
+    oParser = cParser()
+    aResult = oParser.parse(sHtmlContent, pattern)
+
+    if not aResult[0]:
+        oGui.showInfo('xStream', 'Es wurde kein Eintrag gefunden')
+        return
+
+    total = len(aResult[1])
+    for link, title in aResult[1]:
+        if not sst in title.lower():
+            continue
+        else:
+            #get images thumb / descr pro call. (optional)
+            sThumbnail, sDescription = getMetaInfo(link, title)
+            oGuiElement = cGuiElement(title, SITE_IDENTIFIER, 'showSeasons')
+            oGuiElement.setThumbnail(sThumbnail)
+            oGuiElement.setDescription(sDescription)
+            oGuiElement.setMediaType('tvshow')
+            #GuiElement.setYear(year)
+            params.setParam('sUrl', URL_MAIN + link)
+            params.setParam('sName', title)
+            oGui.addFolder(oGuiElement, params, True, total)
+        if not sGui:
+            oGui.setView('tvshows')
+
+
+def getMetaInfo(link, title):   # Setzen von Metadata in Suche:
+    #import xbmc, sys
+    oRequest = cRequestHandler(URL_MAIN + link, caching=False)
+    oRequest.addHeaderEntry('X-Requested-With', 'XMLHttpRequest')
+    oRequest.addHeaderEntry('Referer', 'https://s.to/serien')
+    oRequest.addHeaderEntry('Origin', 'https://s.to')
+
+    #GET CONTENT OF HTML
+    sHtmlContent = oRequest.request()
+    if not sHtmlContent:
+        return
+
+    #xbmc.log(str(sHtmlContent),2)
+    pattern = 'seriesCoverBox">.*?<img src="(http.\:.+?)"\ al.+?data-full-description="([^"]+)"' #img , descr
+
+    oParser = cParser()
+    aResult = oParser.parse(sHtmlContent, pattern)
+
+    if not aResult[0]:
+        oGui.showInfo('xStream', 'Es wurde kein Eintrag gefunden')
+        return
+
+    for sImg, sDescr in aResult[1]:
+        return sImg, sDescr
