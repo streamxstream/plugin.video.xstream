@@ -153,6 +153,10 @@ msgctxt "#30052"
 msgid "Use for Global Search"
 msgstr ""
 
+msgctxt "#30053"
+msgid "Use Advanced Search"
+msgstr ""
+
 msgctxt "#30060"
 msgid "Use automatically generated views"
 msgstr ""
