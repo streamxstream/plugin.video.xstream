@@ -451,6 +451,11 @@
 					</dependencies>	
 					<control type="toggle"/>					
 				</setting>
+				 <setting id="serienstream_to-advsearch" type="boolean" label="30053">
+                                        <level>0</level>
+                                        <default>True</default>
+                                        <control type="toggle"/>
+                                </setting>
 				<setting id="serienstream_to-domain" type="string" label="30051">
 					<level>0</level>
 					<default>s.to</default>
