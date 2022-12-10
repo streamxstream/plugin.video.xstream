@@ -57,7 +57,7 @@ def load(): # Menu structure of the site plugin
         cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30517), SITE_IDENTIFIER, 'showValue'), params)    # From A-Z
         params.setParam('sCont', 'homeContentGenresList')
         cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30506), SITE_IDENTIFIER, 'showValue'), params)    # Genre
-        if cConfig().getSetting('serienstream_to-advsearch'):
+        if cConfig().getSetting('serienstream_to-advsearch') == 'true':
             cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30520), SITE_IDENTIFIER, 'showSearchAdv'), params)   # Search
         else:
             cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30520), SITE_IDENTIFIER, 'showSearch'), params)   # Search
