@@ -17,12 +17,12 @@ from resources.lib.config import cConfig
 SITE_IDENTIFIER = 'serienstream_to'
 SITE_NAME = 'SerienStream'
 SITE_ICON = 'serienstream.png'
-SITE_SETTINGS = '<setting default="s.to" enable="!eq(-2,false)" id="serienstream_to-domain" label="30051" type="labelenum" values="s.to|serienstream.to|190.115.18.20" />'
+SITE_SETTINGS = '<setting default="s.to" enable="!eq(-2,false)" id="serienstream_to-domain" label="30051" type="labelenum" values="s.to|serienstream.to|186.2.175.5" />'
 domain = cConfig().getSetting('serienstream_to-domain')
 SITE_GLOBAL_SEARCH = True
 
 #URL_MAIN = 'https://s.to/'
-if domain == "190.115.18.20":
+if domain == "186.2.175.5":
     URL_MAIN = 'http://' + domain
     proxy = 'true'
 else:
