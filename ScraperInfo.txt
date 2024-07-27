@@ -1,0 +1,76 @@
+Scaper Aufbau
+-------------
+
+# Imports bitte alle oben für den Überblick !
+
+from resources.lib.handler.ParameterHandler import ParameterHandler
+from resources.lib.handler.requestHandler import cRequestHandler
+from resources.lib.tools import logger, cParser, cUtil
+from resources.lib.gui.guiElement import cGuiElement
+from resources.lib.config import cConfig
+from resources.lib.gui.gui import cGui
+
+----------------------------------------------------------------------------
+
+# Namen für Quellen
+
+SITE_IDENTIFIER = 				''
+SITE_NAME = 					''
+SITE_ICON = 					''
+URL_MAIN = 						''
+URL_MOVIES = 					''
+URL_POPULAR_MOVIES = URL_MAIN + ''
+URL_KINO = URL_MAIN + 			''
+URL_SERIES = URL_MAIN + 		''
+URL_POPULAR_SERIES = URL_MAIN + ''
+URL_POPULAR = URL_MAIN + 		''
+URL_GENRE = URL_MAIN + 			''
+URL_SEARCH = URL_MAIN + 		''
+URL_LOGIN = URL_MAIN + 			''
+URL_ENGLISH = URL_MAIN + 		''
+URL_NEW = URL_MAIN + 			''
+URL_ANIMATION = URL_MAIN + 		''
+URL_DOKU = URL_MAIN + 			''
+
+----------------------------------------------------------------------------
+
+# Einbau der Sprachfunktion in Indexseiten
+
+	-	sLanguage = cConfig().getSetting('prefLanguage')	# Sprachauswahl aus settings.xml daraus eine Standard def schreiben
+		params.setParam('sLanguage', sLanguage)
+	0 = Alle Sprachen
+	1 = Deutsch
+	2 = English
+	3 = Japanisch
+
+	# z.B. beim Menü
+	def load():
+		logger.info('Load %s' % SITE_NAME)
+		params = ParameterHandler()
+		# Spracheinstellung aus der settings.xml
+		sLanguage = cConfig().getSetting('prefLanguage')
+		if sLanguage == '1':	# 1 = Deutsch
+			sLanguage = '2'
+		elif sLanguage == '2':	# 2 = Englisch
+			sLanguage = '3'
+		else:
+			sLanguage = 'all'	# 0 = Alle Sprachen
+		params.setParam('sLanguage', sLanguage)	
+		params.setParam('sUrl', URL_KINO)
+		cGui().addFolder(cGuiElement('Aktuelle Kinofilme', SITE_IDENTIFIER, 'showEntries'), params) # cConfig().getLocalizedString(30500) setzen für den jeweiligen Eintrag
+		cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30500), SITE_IDENTIFIER, 'showEntries'), params)
+		
+----------------------------------------------------------------------------
+
+# Einbau der Qualitätfunktion in Indexseiten		
+	
+
+	-	sQuality = cConfig().getSetting('preferedQuality')	# Qualitätsauswahl aus settings.xml daraus eine Standard def schreiben
+		params.setParam('sQuality', sQuality)
+		
+----------------------------------------------------------------------------
+
+# Einbau der P18 funktion in Indexseiten
+		
+	-	sAdult = cConfig().getSetting('showAdult')			# Adult An / Aus aus settings.xml daraus eine Standard def schreiben wie bei SITE_GLOBAL_SEARCH z.B.
+		params.setParam('sAdult', sAdult)
