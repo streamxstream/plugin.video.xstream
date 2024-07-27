@@ -1,0 +1,1490 @@
+# Addon Name: xStream
+# Addon id: plugin.video.xStream
+# Addon Provider: xStream
+# Benutze folgenden Eintrag für die Übersetzung
+# from resources.lib.config import cConfig + cConfig().getLocalizedString(30041)	
+
+msgid ""
+msgstr ""
+
+msgctxt "#30000"
+msgid "Debug-Mode"
+msgstr "Debug Modus"
+
+msgctxt "#30001"
+msgid "Video-Player"
+msgstr "Video Abspieler"
+
+msgctxt "#30002"
+msgid "Preferred language"
+msgstr "Bevorzugte Sprache"
+
+msgctxt "#30003"
+msgid "Show XXX-Content for adult users"
+msgstr "XXX-Inhalte für volljährige Benutzer anzeigen"
+
+msgctxt "#30004"
+msgid "Use TMDB handler"
+msgstr "TMDB Handler verwenden"
+
+msgctxt "#30005"
+msgid "Hoster selection"
+msgstr "Hoster-Auswahl"
+
+msgctxt "#30006"
+msgid "Cachetime for websites in seconds"
+msgstr "Cachezeit für Webseiten in Sekunden"
+
+msgctxt "#30007"
+msgid "Maximum number in hosterlist"
+msgstr "Max. Anzahl von Einträgen in der Hoster-Liste"
+
+msgctxt "#30008"
+msgid "TMDB handler replaces information of websites"
+msgstr "TMDB Handler ersetzt Informationen der Webseiten"
+
+msgctxt "#30009"
+msgid "Pre-validate and sort hosterlist (slow on weak systems)"
+msgstr "Hoster-Liste prüfen und sortieren (langsam auf schwachen Systemen)"
+
+msgctxt "#30010"
+msgid "Enable automatic xStream Update"
+msgstr "Automatisches xStream Update aktivieren"
+
+msgctxt "#30011"
+msgid "Global Search at first position"
+msgstr "Globale Suche an erster Position"
+
+msgctxt "#30012"
+msgid "Show centralized settings"
+msgstr "Zentralisierte Einstellungen anzeigen"
+
+msgctxt "#30013"
+msgid "Prefered Auto-Play quality (if available)"
+msgstr "Bevorzugte Qualität bei Auto-Play Funktion"
+
+msgctxt "#30014"
+msgid "Timeout for HTTP requests in seconds"
+msgstr "Timeout für HTTP-Anfragen in Sekunden"
+
+msgctxt "#30015"
+msgid "Enable automatic ResolveURL update"
+msgstr "Automatisches ResolveURL Update aktivieren"
+
+msgctxt "#30019"
+msgid "use Cover as fanart"
+msgstr "Benutze Cover als Fanart"
+
+msgctxt "#30020"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "#30021"
+msgid "Site-Plugins"
+msgstr "Indexseiten"
+
+msgctxt "#30022"
+msgid "Views"
+msgstr "Ansichten"
+
+msgctxt "#30023"
+msgid "Downloads"
+msgstr "Downloads"
+
+msgctxt "#30024"
+msgid "Accounts"
+msgstr "Konten"
+
+msgctxt "#30030"
+msgid "ResolveURL Updates"
+msgstr "ResolveURL Aktualisierung"
+
+msgctxt "#30031"
+msgid "Presentation"
+msgstr "Darstellung"
+
+msgctxt "#30032"
+msgid "Content"
+msgstr "Inhalt"
+
+msgctxt "#30033"
+msgid "TMDB Handler"
+msgstr "TMDB Handler"
+
+msgctxt "#30034"
+msgid "Hoster Settings"
+msgstr "Hoster Einstellungen"
+
+msgctxt "#30035"
+msgid "Network and Cache Settings"
+msgstr "Netzwerk und Cache Einstellungen"
+
+msgctxt "#30040"
+msgid "Global Search"
+msgstr "Globale Suche"
+
+msgctxt "#30041"
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgctxt "#30042"
+msgid "xStream Settings"
+msgstr "xStream Einstellungen"
+
+msgctxt "#30043"
+msgid "ResolverURL Settings"
+msgstr "Resolver Einstellungen"
+
+msgctxt "#30044"
+msgid "TMDB extended information (slow)"
+msgstr "TMDB erweiterte Informationen (langsam)"
+
+msgctxt "#30050"
+msgid "Use Site-Plugin"
+msgstr "Indexseite verwenden"
+
+msgctxt "#30051"
+msgid "Select Domain"
+msgstr "Domain auswählen"
+
+msgctxt "#30052"
+msgid "Use for Global Search"
+msgstr "Für die Globale Suche benutzen"
+
+msgctxt "#30060"
+msgid "Use automatically generated views"
+msgstr "Automatisch erzeugte Ansichten verwenden"
+
+msgctxt "#30061"
+msgid "Default-View"
+msgstr "Standard-Ansicht"
+
+msgctxt "#30062"
+msgid "Movie-View"
+msgstr "Film-Ansicht"
+
+msgctxt "#30063"
+msgid "Series-View"
+msgstr "Serien-Ansicht"
+
+msgctxt "#30064"
+msgid "Season-View"
+msgstr "Staffel-Ansicht"
+
+msgctxt "#30065"
+msgid "Episode-View"
+msgstr "Episoden-Ansicht"
+
+msgctxt "#30070"
+msgid "JDownloader"
+msgstr "JDownloader"
+
+msgctxt "#30071"
+msgid "JDownloader on/off"
+msgstr "JDownloader an/aus"
+
+msgctxt "#30072"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "#30073"
+msgid "Port"
+msgstr "Port"
+
+msgctxt "#30074"
+msgid "Start download automatically"
+msgstr "Download automatisch starten"
+
+msgctxt "#30075"
+msgid "Send to LinkGrabber only"
+msgstr "Sende nur an LinkGrabber"
+
+msgctxt "#30076"
+msgid "JDownloader2"
+msgstr "JDownloader2"
+
+msgctxt "#30077"
+msgid "JDownloader2 on/off"
+msgstr "JDownloader2 an/aus"
+
+msgctxt "#30080"
+msgid "Extended TMDB information"
+msgstr "Erweiterte TMDB Informationen"
+
+msgctxt "#30081"
+msgid "Download-Folder"
+msgstr "Download-Verzeichnis"
+
+msgctxt "#30082"
+msgid "PyLoad on/off"
+msgstr "PyLoad an/aus"
+
+msgctxt "#30083"
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgctxt "#30084"
+msgid "Password"
+msgstr "Passwort"
+
+msgctxt "#30090"
+msgid "My.JDownloader"
+msgstr "My.JDownloader"
+
+msgctxt "#30091"
+msgid "My.JDownloader on/off"
+msgstr "My.JDownloader an/aus"
+
+msgctxt "#30092"
+msgid "Device Name"
+msgstr "Geräte Name"
+
+msgctxt "#30093"
+msgid "Start manuel nightly update"
+msgstr "Starte manuelles Nightly Update"
+
+msgctxt "#30094"
+msgid "Site-Plugins 1"
+msgstr "Indexseiten 1"
+
+msgctxt "#30095"
+msgid "Site-Plugins 2"
+msgstr "Indexseiten 2"
+
+msgctxt "#30096"
+msgid "xStream Updates"
+msgstr "xStream Aktualisierung"
+
+msgctxt "#30097"
+msgid "[COLOR red]Nightly versions can contain new functions, but also bugs."
+msgstr "[COLOR red]Nightly - Versionen können neue Funktionen, aber auch Fehler enthalten.[/COLOR]"
+
+msgctxt "#30098"
+msgid "Choose Resolver Github Branch"
+msgstr "Wähle Resolver Github Branch"
+
+msgctxt "#30099"
+msgid "Branch Info:		[COLOR green]Release - Version directly from Guial00´s Github.[/COLOR]"
+msgstr "Branch Info:		[COLOR green]Release - Version direkt von Guial00´s Github.[/COLOR]"
+
+msgctxt "#30100"
+msgid "Branch Info:		[COLOR orange]Nightly - Version with hotfixes from the xStream team.[/COLOR]"
+msgstr "Branch Info:		[COLOR orange]Nightly - Version mit Hotfixes vom xStream Team.[/COLOR]"
+
+msgctxt "#30101"
+msgid "[COLOR green]Release - Version directly from Guial00´s Github.[/COLOR][CR][COLOR orange]Nightly - Version with hotfixes from the xStream team.[/COLOR]"
+msgstr "[COLOR green]Release - Version direkt von Guial00´s Github.[/COLOR][CR][COLOR orange]Nightly - Version mit Hotfixes vom xStream Team.[/COLOR]"
+
+msgctxt "#30102"
+msgid "Perform manual update (only once)"
+msgstr "Manuelles Update durchführen (nur einmalig)"
+
+msgctxt "#30103"
+msgid "German"
+msgstr "Deutsch"
+
+msgctxt "#30104"
+msgid "English"
+msgstr "Englisch"
+
+msgctxt "#30105"
+msgid "All"
+msgstr "Alle Sprachen"
+
+msgctxt "#30106"
+msgid "SD 240p"
+msgstr "SD 240p"
+
+msgctxt "#30107"
+msgid "SD 360p"
+msgstr "SD 360p"
+
+msgctxt "#30108"
+msgid "SD 480p"
+msgstr "SD 480p"
+
+msgctxt "#30109"
+msgid "HD 720p"
+msgstr "HD 720p"
+
+msgctxt "#30110"
+msgid "Full HD 1080p"
+msgstr "Full HD 1080p"
+
+msgctxt "#30111"
+msgid "Best Resolution"
+msgstr "Beste Auflösung"
+
+msgctxt "#30112"
+msgid "Search for updates ..."
+msgstr "Suche nach Aktualisierungen ..."
+
+msgctxt "#30113"
+msgid "xStream update installed successfully."
+msgstr "xStream Aktualisierung erfolgreich installiert."
+
+msgctxt "#30114"
+msgid "xStream update finished with errors."
+msgstr "xStream Aktualisierung mit Fehlern beendet."
+
+msgctxt "#30115"
+msgid "No xStream update available."
+msgstr "Keine xStream Aktualisierung verfügbar."
+
+msgctxt "#30116"
+msgid " update installed successfully."
+msgstr " Aktualisierung erfolgreich installiert."
+
+msgctxt "#30117"
+msgid "Resolver update finished with errors."
+msgstr "Resolver Aktualisierung mit Fehlern beendet."
+
+msgctxt "#30118"
+msgid "No Resolver update available."
+msgstr "Keine Resolver Aktualisierung verfügbar."
+
+msgctxt "#30119"
+msgid "ResolveUrl Error"
+msgstr "ResolveURL Fehler"
+
+msgctxt "#30120"
+msgid "You don't have a working ResolveUrl installed, no videos can be played please reinstall the resolver."
+msgstr "Sie haben keinen funktionierenden ResolveUrl installiert, es können keine Videos abgespielt werden bitte installieren Sie den Resolver erneut."
+
+msgctxt "#30121"
+msgid "Start manual update"
+msgstr "Manuelle Aktualisierung starten"
+
+msgctxt "#30122"
+msgid "xStream search started ..."
+msgstr "xStream Suche gestartet ..."
+
+msgctxt "#30123"
+msgid "Searching ..."
+msgstr "Suche ..."
+
+msgctxt "#30124"
+msgid "Browse index pages:   "
+msgstr "Durchsuche Indexseiten:   "
+
+msgctxt "#30125"
+msgid " search complete"
+msgstr " Suche abgeschlossen"
+
+msgctxt "#30126"
+msgid "xStream search complete !"
+msgstr "xStream Suche abgeschlossen !"
+
+msgctxt "#30127"
+msgid "Gathering info..."
+msgstr "Informationen sammeln..."
+
+msgctxt "#30128"
+msgid " of "
+msgstr " von "
+
+msgctxt "#30129"
+msgid "Dialog view"
+msgstr "Dialogansicht"
+
+msgctxt "#30130"
+msgid "Automatic play"
+msgstr "Automatisch abspielen"
+
+msgctxt "#30131"
+msgid "List view"
+msgstr "Listenansicht"
+
+msgctxt "#30132"
+msgid "Load files in the background"
+msgstr "Dateien im Hintergrund laden"
+
+msgctxt "#30133"
+msgid "Color"
+msgstr "Farbe"
+
+msgctxt "#30134"
+msgid "No hoster link was passed!"
+msgstr "Es wurde kein Hosterlink übergeben!"
+
+msgctxt "#30135"
+msgid "Stream no longer available or broken link"
+msgstr "Stream nicht mehr verfügbar oder Link fehlerhaft"
+
+msgctxt "#30136"
+msgid "Playlist"
+msgstr "Abspielliste"
+
+msgctxt "#30137"
+msgid "Stream has been added to the playlist"
+msgstr "Stream wurde der Abspielliste hinzugefügt"
+
+msgctxt "#30138"
+msgid "Load stream or hoster"
+msgstr "Lade Stream oder Hoster"
+
+msgctxt "#30139"
+msgid "Importing index page entries ..."
+msgstr "Importiere Einträge der Indexseite ..."
+
+msgctxt "#30140"
+msgid "Passing index page entries ..."
+msgstr "Übergebe Einträge der Indexseite ..."
+
+msgctxt "#30141"
+msgid "Stream or hoster not available"
+msgstr "Stream oder Hoster nicht verfügbar"
+
+msgctxt "#30142"
+msgid "no hoster available"
+msgstr "Kein Hoster verfügbar"
+
+msgctxt "#30143"
+msgid "Create hoster list ..."
+msgstr "Erstelle Hosterliste ..."
+
+msgctxt "#30144"
+msgid "no supported hoster available"
+msgstr "Kein unterstützter Hoster verfügbar"
+
+msgctxt "#30145"
+msgid "Hoster link"
+msgstr "Hosterlink"
+
+msgctxt "#30146"
+msgid "Start transferred hoster link"
+msgstr "Starte übergebenen Hosterlink"
+
+msgctxt "#30147"
+msgid "Trying to start hoster ..."
+msgstr "Versuche Hoster zu starten ..."
+
+msgctxt "#30148"
+msgid "Failed to start hoster %s"
+msgstr "Starten des Hosters %s ist fehlgeschlagen"
+
+msgctxt "#30149"
+msgid "Please select hoster"
+msgstr "Bitte Hoster auswählen"
+
+msgctxt "#30150"
+msgid "Please select part"
+msgstr "Bitte Teil auswählen"
+
+msgctxt "#30151"
+msgid "xStream Update Manager"
+msgstr "xStream Aktualisierungsmanager"
+
+msgctxt "#30152"
+msgid "Welcome to the xStream update manager. For automatic update please set the desired branch selection in the settings, for manual update please choose what should be updated in the following windows."
+msgstr "Willkommen beim xStream Aktualisierungsmanager. Für die automatische Aktualisierung setzen Sie bitte die gewünschte Branch-Auswahl in den Einstellungen, für die manuelle Aktualisierung wählen Sie bitte in den nachfolgenden Fenstern, was aktualisiert werden soll."
+
+msgctxt "#30153"
+msgid "Update all addons"
+msgstr "Alle Addons aktualisieren"
+
+msgctxt "#30154"
+msgid "perform"
+msgstr "durchführen"
+
+msgctxt "#30155"
+msgid "Please select whether you want to perform the xStream [Release] or [Nightly] update.[CR][COLOR green]Release versions have been tested and contain hardly any errors.[/COLOR][CR][COLOR orange ]Nightly - versions are experimental and may contain bugs.[/COLOR]"
+msgstr "Wählen Sie bitte aus, ob sie die xStream [Release] oder [Nightly] Aktualisierung durchführen möchten.[CR][COLOR green]Release - Versionen sind getestet und enthalten kaum Fehler.[/COLOR][CR][COLOR orange]Nightly - Versionen sind experimentell und können Fehler enthalten.[/COLOR]"
+
+msgctxt "#30156"
+msgid "When updating "
+msgstr "Bei der Aktualisierung von "
+
+msgctxt "#30157"
+msgid " an error has occurred."
+msgstr " ist ein Fehler aufgetreten."
+
+msgctxt "#30158"
+msgid "The installation is now complete![CR]"
+msgstr "Die Installation ist nun abgeschlossen![CR]"
+
+msgctxt "#30159"
+msgid " - has been updated successfully."
+msgstr " - wurde erfolgreich aktualisiert."
+
+msgctxt "#30160"
+msgid "The search to updates is now complete![CR]"
+msgstr "Die Suche nach Aktualisierungen ist nun abgeschlossen![CR]"
+
+msgctxt "#30161"
+msgid " - No update available."
+msgstr " - Keine Aktualisierung verfügbar."
+
+msgctxt "#30162"
+msgid "Install"
+msgstr "Installieren"
+
+msgctxt "#30163"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgctxt "#30164"
+msgid "Clear HTML cache after (X) day(s)"
+msgstr "HTML Cache nach (X) Tag(e) löschen"
+
+msgctxt "#30165"
+msgid "Delete HTML cache now"
+msgstr "HTML Cache jetzt löschen"
+
+msgctxt "#30166"
+msgid "[xStream]"
+msgstr "[xStream]"
+
+msgctxt "#30167"
+msgid "Choose xStream Github Branch"
+msgstr "Wähle xStream Github Branch"
+
+msgctxt "#30168"
+msgid "Branch Info:		[COLOR green]Release - Version directly from xStream Github.[/COLOR]"
+msgstr "Branch Info:		[COLOR green]Release - Version direkt vom xStream Github.[/COLOR]"
+
+msgctxt "#30169"
+msgid "Branch Info:		[COLOR orange]Nightly - Version with hotfixes from the xStream team.[/COLOR]"
+msgstr "Branch Info:		[COLOR orange]Nightly - Version mit Hotfixes vom xStream Team.[/COLOR]"
+
+msgctxt "#30170"
+msgid "Posters Size"
+msgstr "Größe des Posters"
+
+msgctxt "#30171"
+msgid "Fanarts Size"
+msgstr "Größe der Fanart"
+
+msgctxt "#30172"
+msgid "TMDB language setting"
+msgstr "TMDB Spracheinstellung"
+
+
+msgctxt "#30173"
+msgid "[COLOR green]Release - Version directly from xStream Github.[/COLOR][CR][COLOR orange]Nightly - Version with hotfixes from the xStream team.[/COLOR]"
+msgstr "[COLOR green]Release - Version direkt vom xStream Github.[/COLOR][CR][COLOR orange]Nightly - Version mit Hotfixes vom xStream Team.[/COLOR]"
+
+msgctxt "#30174"
+msgid "TMDB"
+msgstr "TMDB"
+
+msgctxt "#30175"
+msgid "English"
+msgstr "Englisch"
+
+msgctxt "#30176"
+msgid "German"
+msgstr "Deutsch"
+
+msgctxt "#30177"
+msgid "French"
+msgstr "Französisch"
+
+msgctxt "#30178"
+msgid "Italian"
+msgstr "Italienisch"
+
+msgctxt "#30179"
+msgid "Nederlands"
+msgstr "Niederlande"
+
+msgctxt "#30180"
+msgid "Swedish"
+msgstr "Schwedisch"
+
+msgctxt "#30181"
+msgid "Czech"
+msgstr "Tschechisch"
+
+msgctxt "#30182"
+msgid "Danish"
+msgstr "Dänisch"
+
+msgctxt "#30183"
+msgid "Finnish"
+msgstr "Finnisch"
+
+msgctxt "#30184"
+msgid "Polish"
+msgstr "Polnisch"
+
+msgctxt "#30185"
+msgid "Spanish"
+msgstr "Spanisch"
+
+msgctxt "#30186"
+msgid "Greek"
+msgstr "Griechisch"
+
+msgctxt "#30187"
+msgid "Turkish"
+msgstr "Türkisch"
+
+msgctxt "#30188"
+msgid "Ukrainian"
+msgstr "Ukrainisch"
+
+msgctxt "#30189"
+msgid "Russian"
+msgstr "Russisch"
+
+msgctxt "#30190"
+msgid "Kannada"
+msgstr "Kannada"
+
+msgctxt "#30191"
+msgid "Irish"
+msgstr "Irisch"
+
+msgctxt "#30192"
+msgid "Croatian"
+msgstr "Kroatisch"
+
+msgctxt "#30193"
+msgid "Hungarian"
+msgstr "Ungarisch"
+
+msgctxt "#30194"
+msgid "Japanese"
+msgstr "Japanisch"
+
+msgctxt "#30195"
+msgid "Norwegian"
+msgstr "Norwegisch"
+
+msgctxt "#30196"
+msgid "Indonesian"
+msgstr "Indonesisch"
+
+msgctxt "#30197"
+msgid "Korean"
+msgstr "Koreanisch"
+
+msgctxt "#30198"
+msgid "Portuguese"
+msgstr "Portugiesisch"
+
+msgctxt "#30199"
+msgid "Latvian"
+msgstr "Lettisch"
+
+msgctxt "#30200"
+msgid "Lithuanian"
+msgstr "Litauisch"
+
+msgctxt "#30201"
+msgid "Romanian"
+msgstr "Rumänisch"
+
+msgctxt "#30202"
+msgid "Slovak"
+msgstr "Slowakisch"
+
+msgctxt "#30203"
+msgid "Slovenian"
+msgstr "Slowenisch"
+
+msgctxt "#30204"
+msgid "Albanian"
+msgstr "Albanisch"
+
+msgctxt "#30205"
+msgid "Serbian"
+msgstr "Serbisch"
+
+msgctxt "#30206"
+msgid "Thai"
+msgstr "Thailändisch"
+
+msgctxt "#30207"
+msgid "Vietnamese"
+msgstr "Vietnamesisch"
+
+msgctxt "#30208"
+msgid "Bulgarian"
+msgstr "Bulgarisch"
+
+msgctxt "#30209"
+msgid "Persian"
+msgstr "Persisch"
+
+msgctxt "#30210"
+msgid "Armenian"
+msgstr "Armenisch"
+
+msgctxt "#30211"
+msgid "Georgian"
+msgstr "Georgisch"
+
+msgctxt "#30212"
+msgid "Arabic"
+msgstr "Arabisch"
+
+msgctxt "#30213"
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+msgctxt "#30214"
+msgid "Bosnian"
+msgstr "Bosnisch"
+
+msgctxt "#30215"
+msgid "Chinese"
+msgstr "Chinesisch"
+
+msgctxt "#30216"
+msgid "Chinese"
+msgstr "Chinesisch"
+
+msgctxt "#30217"
+msgid "Hindi"
+msgstr "Hindi"
+
+msgctxt "#30218"
+msgid "lightblue"
+msgstr "Hellblau"
+
+msgctxt "#30219"
+msgid "lightcoral"
+msgstr "Hellkoralle"
+
+msgctxt "#30220"
+msgid "lightcyan"
+msgstr "Hellcyan"
+
+msgctxt "#30221"
+msgid "lightgreen"
+msgstr "Hellgrün"
+
+msgctxt "#30222"
+msgid "lightgrey"
+msgstr "Hellgrau"
+
+msgctxt "#30223"
+msgid "lightpink"
+msgstr "Hellpink"
+
+msgctxt "#30224"
+msgid "lightsalmon"
+msgstr "Lichtlachs"
+
+msgctxt "#30225"
+msgid "lightseagreen"
+msgstr "Hellmeergrün"
+
+msgctxt "#30226"
+msgid "lightskyblue"
+msgstr "Hellhimmelblau"
+
+msgctxt "#30227"
+msgid "lightslategray"
+msgstr "Lichtschiefergrau"
+
+msgctxt "#30228"
+msgid "lightsteelblue"
+msgstr "Hellstahlblau"
+
+msgctxt "#30229"
+msgid "lightyellow"
+msgstr "Hellgelb"
+
+msgctxt "#30230"
+msgid "aliceblue"
+msgstr "Alice blau"
+
+msgctxt "#30231"
+msgid "coral"
+msgstr "Koralle"
+
+msgctxt "#30232"
+msgid "lavender"
+msgstr "Lavendel"
+
+msgctxt "#30233"
+msgid "lemonchiffon"
+msgstr "Zitronenchiffon"
+
+msgctxt "#30234"
+msgid "moccasin"
+msgstr "Mokassin"
+
+msgctxt "#30235"
+msgid "pink"
+msgstr "Rosa"
+
+msgctxt "#30236"
+msgid "plum"
+msgstr "Pflaume"
+
+msgctxt "#30237"
+msgid "powderblue"
+msgstr "Puderblau"
+
+msgctxt "#30238"
+msgid "seashell"
+msgstr "Muschelfarben"
+
+msgctxt "#30239"
+msgid "Extended information (TMDB)"
+msgstr "Erweiterte Informationen (TMDB)"
+
+msgctxt "#30240"
+msgid ">>> Next page >>>"
+msgstr ">>> Nächste Seite >>>"
+
+msgctxt "#30241"
+msgid "Info"
+msgstr "Informationen"
+
+msgctxt "#30242"
+msgid "Action(info)"
+msgstr "Action(Informationen)"
+
+msgctxt "#30243"
+msgid "More sources"
+msgstr "Weitere Quellen"
+
+msgctxt "#30244"
+msgid "Add to Playlist"
+msgstr "Zur Abspielliste hinzufügen"
+
+msgctxt "#30245"
+msgid "Download"
+msgstr "Herunterladen"
+
+msgctxt "#30246"
+msgid "Send to JDownloader"
+msgstr "Sende zum JDownloader"
+
+msgctxt "#30247"
+msgid "Send to JDownloader2"
+msgstr "Sende zum JDownloader2"
+
+msgctxt "#30248"
+msgid "Send to My.JDownloader"
+msgstr "Sende zu My.JDownloader"
+
+msgctxt "#30250"
+msgid "Send to PyLoad"
+msgstr "Sende zu Pyload"
+
+msgctxt "#30251"
+msgid "Choose page"
+msgstr "Seite auswählen"
+
+msgctxt "#30252"
+msgid "Notification"
+msgstr "Benachrichtigung"
+
+msgctxt "#30253"
+msgid "No entry was found"
+msgstr "Es wurde kein Eintrag gefunden"
+
+msgctxt "#30254"
+msgid "Please check settings"
+msgstr "Einstellungen bitte überprüfen"
+
+msgctxt "#30255"
+msgid "Connection failed (JD or external CNL port support disabled?)"
+msgstr "Verbindung fehlgeschlagen (JD oder externe CNL Port Unterstützung ausgeschaltet?)"
+
+msgctxt "#30256"
+msgid "Link sent"
+msgstr "Link gesendet"
+
+msgctxt "#30257"
+msgid "PyLoad"
+msgstr "PyLoad"
+
+msgctxt "#30258"
+msgid "Error sending link!"
+msgstr "Fehler beim Senden des Links!"
+
+msgctxt "#30259"
+msgid "Error getting url:"
+msgstr "Fehler beim Abrufen der Url:"
+
+msgctxt "#30260"
+msgid "Your ISP censors your Internet access!"
+msgstr "Ihr Internetanbieter zensiert ihren Internetzugang!"
+
+msgctxt "#30261"
+msgid "To protect yourself from censorship, we recommend to change your DNS at your router and/or boxes to Google or Cloudflare - for both ipV4 and ipV6 protocols. Instructions can be found with a Google search, e.g. 'Change Fritzbox DNS Server'"
+msgstr "Um sich vor der Zensur zu schützen, empfehlen wir Euren DNS Server im Router oder auf Euren Geräten auf Google oder Cloudflare umzustellen - für die Protokolle ipV4 UND ipV6! Anleitungen findet Ihr per Googlesuche z.B. 'Fritzbox DNS Server ändern'"
+
+msgctxt "#30262"
+msgid "[COLOR red]This page requires a free user account. Please register at http://flimmerstube.com and enter your account details in the xStream settings.[/COLOR]"
+msgstr "[COLOR red]Für diese Seite ist ein kostenloses Benutzerkonto nötig, bitte registrieren Sie sich unter http://flimmerstube.com und tragen Sie ihre Kontodaten in den xStream-Einstellungen ein.[/COLOR]"
+
+msgctxt "#30263"
+msgid "[COLOR red]This page requires a free user account. Please register at https://aniworld.to/ and enter your account details in the xStream settings.[/COLOR]"
+msgstr "[COLOR red]Für diese Seite ist ein kostenloses Benutzerkonto nötig, bitte registrieren Sie sich unter https://aniworld.to/ und tragen Sie ihre Kontodaten in den xStream-Einstellungen ein.[/COLOR]"
+
+msgctxt "#30264"
+msgid "[COLOR red]This page requires a free user account. Please register at https://s.to/ and enter your account details in the xStream settings.[/COLOR]"
+msgstr "[COLOR red]Für diese Seite ist ein kostenloses Benutzerkonto nötig, bitte registrieren Sie sich unter https://s.to/ und tragen Sie ihre Kontodaten in den xStream-Einstellungen ein.[/COLOR]"
+
+msgctxt "#30265"
+msgid "xStream Support Information"
+msgstr "xStream Support Informationen"
+
+msgctxt "#30266"
+msgid "System platform: "
+msgstr "System Plattform:"
+
+msgctxt "#30267"
+msgid "View support information"
+msgstr "Support Information anzeigen"
+
+msgctxt "#30268"
+msgid "Please select whether you want to perform the ResolveURL [Release] or [Nightly] update.[CR][COLOR green]Release - Version directly from Guial00's Github.[/COLOR][CR][COLOR orange ]Nightly - version with hotfixes from the xStream team.[/COLOR]"
+msgstr "Wählen Sie bitte aus, ob sie die ResolveURL [Release] oder [Nightly] Aktualisierung durchführen möchten.[CR][COLOR green]Release - Version direkt von Guial00´s Github.[/COLOR][CR][COLOR orange]Nightly - Version mit Hotfixes vom xStream Team.[/COLOR]"
+
+msgctxt "#30269"
+msgid "The presettings are now complete. Please note that the update manager will overwrite your existing installations, but not your user data & settings. Press [Install] to start the update now or [Cancel] to exit."
+msgstr "Die Voreinstellungen sind nun abgeschlossen. Bedenken Sie bitte, dass der Aktualisierungsmanager Ihre vorhandenen Installationen überschreibt, aber nicht Ihre Benutzerdaten & Einstellungen. Drücken Sie auf [Installieren] um die Aktualisierung jetzt zu starten oder auf [Abbrechen] um den Vorgang zu beenden."
+
+msgctxt "#30270"
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+msgctxt "#30271"
+msgid "Update Notification"
+msgstr "Benachrichtigung der Aktualisierung"
+
+msgctxt "#30272"
+msgid "Simple"
+msgstr "Einfach"
+
+msgctxt "#30273"
+msgid "Full"
+msgstr "Vollständig"
+
+msgctxt "#30274"
+msgid "View change log after update"
+msgstr "Änderungsprotokoll nach Aktualisierung anzeigen"
+
+msgctxt "#30275"
+msgid "[B][COLOR cyan]xStream[/COLOR] [COLOR white]Changelog[/COLOR][/B]"
+msgstr "[B][COLOR cyan]xStream[/COLOR] [COLOR white]Änderungsprotokoll (Changelog)[/COLOR][/B]"
+
+msgctxt "#30276"
+msgid "Show changelog now"
+msgstr "Änderungsprotokoll jetzt anzeigen"
+
+msgctxt "#30277"
+msgid "Automatic update the domain & global search"
+msgstr "Autom. Aktualisierung der Domain (Globale Suche wird aktiviert)"
+
+msgctxt "#30278"
+msgid "Currently used domain"
+msgstr "Derzeitig verwendete Domain"
+
+
+msgctxt "#30302"
+msgid "Seasons german"
+msgstr "Staffeln Deutsch"
+
+msgctxt "#30303"
+msgid "Seasons english"
+msgstr "Staffeln Englisch"
+
+msgctxt "#30304"
+msgid "Search"
+msgstr "Suche"
+
+msgctxt "#30305"
+msgid "Season %s"
+msgstr "Staffel %s"
+
+msgctxt "#30306"
+msgid "%s to %s second"
+msgstr "%s bis %s Sekunde"
+
+msgctxt "#30307"
+msgid "Play all"
+msgstr "Alle abspielen"
+
+msgctxt "#30308"
+msgid "Waiting time"
+msgstr "Wartezeit"
+
+msgctxt "#30309"
+msgid "Please wait %s seconds"
+msgstr "Bitte warte %s Sekunden"
+
+msgctxt "#30310"
+msgid "Developer Options"
+msgstr "Entwickler Optionen"
+
+msgctxt "#30311"
+msgid "xStream Developer Menu"
+msgstr "xStream Entwickler Menü"
+
+msgctxt "#30312"
+msgid "Enable automatic xStream Dev Update"
+msgstr "Automatisches xStream Dev Update aktivieren"
+
+msgctxt "#30313"
+msgid "Developer ID"
+msgstr "Entwickler ID"
+
+msgctxt "#30314"
+msgid "Developer Username"
+msgstr "Entwickler Benutzername"
+
+msgctxt "#30315"
+msgid "Developer Branch"
+msgstr "Entwickler Zweig"
+
+msgctxt "#30316"
+msgid "Developer Token"
+msgstr "Entwickler Token"
+
+msgctxt "#30317"
+msgid "Please enter the developer ID you received here"
+msgstr "Geben Sie hier bitte die Entwickler ID ein, die Sie erhalten haben"
+
+msgctxt "#30318"
+msgid "Please enter the developer name you received here"
+msgstr "Geben Sie hier bitte den Entwickler Namen ein, den Sie erhalten haben"
+
+msgctxt "#30319"
+msgid "Please enter the developer branch you received here"
+msgstr "Geben Sie hier bitte den Entwickler Zweig ein, den Sie erhalten haben"
+
+msgctxt "#30320"
+msgid "Please enter the developer token you received here"
+msgstr "Geben Sie hier bitte den Entwickler Token ein, den Sie erhalten haben"
+
+msgctxt "#30402"
+msgid "Countries"
+msgstr "Länder"
+
+msgctxt "#30403"
+msgid "No entry available in the selected language!"
+msgstr "Kein Eintrag in der ausgewählten Sprache verfügbar!"
+
+msgctxt "#30404"
+msgid "Exclude specific hosters (separate with a comma)"
+msgstr "Bestimmte Hoster ausschließen (mit Komma trennen)"
+
+msgctxt "#30405"
+msgid "HTML cache folder has been cleaned"
+msgstr "HTML Cache Ordner wurde bereinigt"
+
+msgctxt "#30406"
+msgid "Choose xStream Version"
+msgstr "Wähle xStream Version"
+
+msgctxt "#30407"
+msgid "Site-Plugins VoD"
+msgstr "Indexseiten VoD"
+
+msgctxt "#30408"
+msgid "VoD index pages"
+msgstr "Video on Demand Indexseiten"
+
+msgctxt "#30409"
+msgid "Enable VoD index pages"
+msgstr "Video on Demand Indexseiten aktivieren"
+
+msgctxt "#30410"
+msgid "Automatic update the domain"
+msgstr "Autom. Aktualisierung der Domain"
+
+msgctxt "#30411"
+msgid " [I](Reboot required!)[/I]"
+msgstr " [I](Neustart erforderlich!)[/I]"
+
+msgctxt "#30412"
+msgid "Video on demand services"
+msgstr "Video on Demand Dienste"
+
+############### Scaper Language ###############
+
+msgctxt "#30500"
+msgid "New"
+msgstr "Neues"
+
+msgctxt "#30501"
+msgid "Current Movies in the cinema"
+msgstr "Aktuelle Filme im Kino"
+
+msgctxt "#30502"
+msgid "Movies"
+msgstr "Filme"
+
+msgctxt "#30503"
+msgid "Movies for Children"
+msgstr "Filme für Kinder"
+
+msgctxt "#30504"
+msgid "Animated Movies"
+msgstr "Animationsfilme"
+
+msgctxt "#30505"
+msgid "Documentations"
+msgstr "Dokumentationen"
+
+msgctxt "#30506"
+msgid "Genre"
+msgstr "Genre"
+
+msgctxt "#30507"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "#30508"
+msgid "Release Year"
+msgstr "Erscheinungsjahr"
+
+msgctxt "#30509"
+msgid "Top Movies"
+msgstr "Blockbuster / Top Filme"
+
+msgctxt "#30510"
+msgid "IMDB rating"
+msgstr "IMDB-Bewertung"
+
+msgctxt "#30511"
+msgid "Series"
+msgstr "Serien"
+
+msgctxt "#30512"
+msgid "Season"
+msgstr "Staffel"
+
+msgctxt "#30513"
+msgid "Episode"
+msgstr "Folge"
+
+msgctxt "#30514"
+msgid "New Series"
+msgstr "Neue Serien"
+
+msgctxt "#30515"
+msgid "New Season"
+msgstr "Neue Staffel"
+
+msgctxt "#30516"
+msgid "New Episodes"
+msgstr "Neue Folgen"
+
+msgctxt "#30517"
+msgid "From A-Z"
+msgstr "Von A-Z"
+
+msgctxt "#30518"
+msgid "All Series"
+msgstr "Alle Serien"
+
+msgctxt "#30519"
+msgid "Popular Series"
+msgstr "Beliebte Serien"
+
+msgctxt "#30520"
+msgid "Search"
+msgstr "Suche"
+
+msgctxt "#30521"
+msgid "Popular Movies"
+msgstr "Beliebte Filme"
+
+msgctxt "#30522"
+msgid "Popular Documentations"
+msgstr "Beliebte Dokumentationen"
+
+msgctxt "#30523"
+msgid "New Documentations"
+msgstr "Neue Dokumentationen"
+
+msgctxt "#30524"
+msgid "Release Year/Country"
+msgstr "Veröffentlichungsjahr/Land"
+
+msgctxt "#30525"
+msgid "Random Movie"
+msgstr "Zufallsfilm"
+
+msgctxt "#30526"
+msgid "Random Serie"
+msgstr "Zufallsserie"
+
+msgctxt "#30527"
+msgid "Directors"
+msgstr "Regisseure"
+
+msgctxt "#30528"
+msgid "Movies Genre"
+msgstr "Film Genre"
+
+msgctxt "#30529"
+msgid "Series Genre"
+msgstr "Serien Genre"
+
+msgctxt "#30530"
+msgid " (featured)"
+msgstr " (vorgestellt)"
+
+msgctxt "#30531"
+msgid " (releases)"
+msgstr " (veröffentlicht)"
+
+msgctxt "#30532"
+msgid " (trending)"
+msgstr " (im Trend)"
+
+msgctxt "#30533"
+msgid " (updates)"
+msgstr " (aktualisiert)"
+
+msgctxt "#30534"
+msgid " (requested)"
+msgstr " (angefordert)"
+
+msgctxt "#30535"
+msgid " (rating)"
+msgstr " (Bewertung)"
+
+msgctxt "#30536"
+msgid " (votes)"
+msgstr " (Stimmen)"
+
+msgctxt "#30537"
+msgid " (views)"
+msgstr " (Ansichten)"
+
+msgctxt "#30538"
+msgid " Country"
+msgstr " Land"
+
+msgctxt "#30539"
+msgid "Top 10 films this week"
+msgstr "Top 10 Filme diese Woche"
+
+msgctxt "#30540"
+msgid "Top 10 series this week"
+msgstr "Top 10 Serien diese Woche"
+
+msgctxt "#30541"
+msgid "New Movies"
+msgstr "Neue Filme"
+
+msgctxt "#30542"
+msgid "All Movies"
+msgstr "Alle Filme"
+
+msgctxt "#30543"
+msgid "Collection"
+msgstr "Kollektionen"
+
+msgctxt "#30544"
+msgid "Popular with "
+msgstr "Beliebt bei "
+
+msgctxt "#30545"
+msgid "Trending films"
+msgstr "Filme im Trend"
+
+msgctxt "#30546"
+msgid "Trending series"
+msgstr "Serien im Trend"
+
+msgctxt "#30547"
+msgid "Search movies"
+msgstr "Suche Filme"
+
+msgctxt "#30548"
+msgid "Search series"
+msgstr "Suche Serien"
+
+############### Site Plugins ###############
+
+msgctxt "#30700"
+msgid "Aniworld"
+msgstr ""
+
+msgctxt "#30701"
+msgid "Dokus4"
+msgstr ""
+
+msgctxt "#30702"
+msgid "FilmPalast"
+msgstr ""
+
+msgctxt "#30703"
+msgid "Flimmerstube"
+msgstr ""
+
+msgctxt "#30704"
+msgid "HD-Filme"
+msgstr ""
+
+msgctxt "#30705"
+msgid ""
+msgstr ""
+
+msgctxt "#30706"
+msgid "Kinokiste"
+msgstr ""
+
+msgctxt "#30707"
+msgid ""
+msgstr ""
+
+msgctxt "#30708"
+msgid "KinoX"
+msgstr ""
+
+msgctxt "#30709"
+msgid "KKiste"
+msgstr ""
+
+msgctxt "#30710"
+msgid "Megakino"
+msgstr ""
+
+msgctxt "#30711"
+msgid "Movie4k"
+msgstr ""
+
+msgctxt "#30712"
+msgid "Internet Archive"
+msgstr ""
+
+msgctxt "#30713"
+msgid "NetzKino"
+msgstr ""
+
+msgctxt "#30714"
+msgid "SerienStream"
+msgstr ""
+
+msgctxt "#30715"
+msgid "Movie2k"
+msgstr ""
+
+msgctxt "#30716"
+msgid "xCine"
+msgstr ""
+
+msgctxt "#30717"
+msgid "KinoGer"
+msgstr ""
+
+msgctxt "#30718"
+msgid "KinoKiste"
+msgstr ""
+
+msgctxt "#30719"
+msgid ""
+msgstr ""
+
+msgctxt "#30720"
+msgid "Cinemathek"
+msgstr ""
+
+msgctxt "#30721"
+msgid "StreamCloud"
+msgstr ""
+
+msgctxt "#30722"
+msgid ""
+msgstr ""
+
+msgctxt "#30723"
+msgid ""
+msgstr ""
+
+msgctxt "#30724"
+msgid "Streamkiste"
+msgstr ""
+
+msgctxt "#30725"
+msgid "Streamcloud"
+msgstr ""
+
+msgctxt "#30726"
+msgid ""
+msgstr ""
+
+msgctxt "#30727"
+msgid ""
+msgstr ""
+
+msgctxt "#30728"
+msgid "Moflix-Stream"
+msgstr ""
+
+############### VoD Plugins ###############
+
+msgctxt "#30790"
+msgid "Video on Demand Huhu"
+msgstr ""
+
+msgctxt "#30791"
+msgid "Video on Demand Kool"
+msgstr ""
+
+msgctxt "#30792"
+msgid "Video on Demand Oha"
+msgstr ""
+
+msgctxt "#30793"
+msgid "Video on Demand Vavoo"
+msgstr ""
+
+############### Genre ###############
+
+msgctxt "#30800"
+msgid "Action"
+msgstr "Action"
+
+msgctxt "#30801"
+msgid "Animation"
+msgstr "Animation"
+
+msgctxt "#30802"
+msgid "Horror"
+msgstr "Horror"
+
+msgctxt "#30803"
+msgid "Comedy"
+msgstr "Komödie"
+
+msgctxt "#30804"
+msgid "Love film"
+msgstr "Liebesfilm"
+
+msgctxt "#30805"
+msgid "Music film"
+msgstr "Musikfilm"
+
+msgctxt "#30806"
+msgid "SciFi film"
+msgstr "Science Fiction"
+
+msgctxt "#30807"
+msgid "Adventure"
+msgstr "Abenteuer"
+
+msgctxt "#30808"
+msgid "Cinema film"
+msgstr "Kinofilm"
+
+msgctxt "#30809"
+msgid "War film"
+msgstr "Kriegsfilm"
+
+msgctxt "#30810"
+msgid "Crime"
+msgstr "Krimi"
+
+msgctxt "#30811"
+msgid "Thriller"
+msgstr "Thriller"
+
+msgctxt "#30812"
+msgid "Western film"
+msgstr "Western"

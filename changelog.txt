@@ -1,0 +1,9 @@
+[B]Version: 4.0.11 Nightly 1[/B]
+
+26.07.2024
+
+ - Diverse Domainanpassungen
+ - [intern] Code-Optimierungen und Performance Verbesserungen
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
+[I]*Editierhinweis: Text nicht länger als die Linie. Keine Tabulatoren verwenden![/I]

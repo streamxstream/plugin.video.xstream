@@ -1,0 +1,16 @@
+* Plugin Handler.py für neue settings.xml überarbeiten, Definition im PluginHandler derzeit deaktiviert
+* Cloudflare Scraper einbauen
+* Scraper
+    N/A
+* Scraper mit Sprachauswahl
+	Fertige Siteplugins
+	- Aniworld (Hoster DE/JP+DESub/JP+ENSub)
+	- Filmpalast (Menü DE/EN)
+	- HDFilme (showEntries DE/EN)
+	- Kinokiste (showEntries DE/EN)
+	- KKiste (showEntries DE/EN)
+	- Kinox (Menü DE/EN)
+	- Movie2k (Menü DE/EN)
+	- Movie4k (showEntries DE/EN)
+	- s.to (Hoster DE/EN+DESub)
+	- xcine (showEntries DE/EN)
