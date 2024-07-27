@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.xstream" name="xStream" version="4.0.11~nightly1" provider-name="xStream-Team">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl" version="5.1.67"/>
+		<import addon="script.module.six" version="1.11.0"/>
+		<import addon="repository.xstream" optional="true"/>
+		<import addon="repository.resolveurl" optional="true"/>
+		<import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
+		<import addon="script.module.web-pdb" version="1.5.6" optional="true"/>
+		<import addon="script.module.pydevd" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Schau über xStream!</summary>
+		<summary lang="en_GB">Watch over xStream!</summary>
+		<description lang="de">Mit diesem Addon kannst du auf angebotene Streams, verschiedener Quellen zugreifen.</description>
+		<description lang="en_GB">With this addon you can access streams offered by various sources.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+		<disclaimer lang="en_GB">The content represented by this addon is not hosted or distributed by the creators of the addon, nor are the creators affiliated with the content providers in any way.</disclaimer>
+		<source>https://github.com/streamxstream/plugin.video.xstream</source>
+		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
+		<license>GNU GPLv3</license>
+		<platform>all</platform>
+		<news>xStream PY3 Kodi 19/20</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/art/screenshot.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
