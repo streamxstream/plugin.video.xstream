@@ -1,0 +1,1595 @@
+<?xml version="1.0" ?>
+<settings version="1">
+	<section id="plugin.video.xstream">
+		<category id="general" label="30020" help="">
+			<group id="presentation" label="30031">
+				<setting id="GlobalSearchPosition" type="boolean" label="30011" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="SettingsFolder" type="boolean" label="30012" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="replacefanart" type="boolean" label="30019" help="">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="content" label="30032">
+				<setting id="prefLanguage" type="string" label="30002" help="30411">
+					<level>0</level>
+					<default>0</default>
+					<constraints>
+						<options>
+							<option label="30105" help="All">0</option>
+							<option label="30103" help="German">1</option>
+							<option label="30104" help="English">2</option>
+							<option label="30194" help="Japanese">3</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="preferedQuality" type="string" label="30013" help="">
+					<level>0</level>
+					<default>5</default>
+					<constraints>
+						<options>
+							<option label="30106" help="240p">0</option>
+							<option label="30107" help="360p">1</option>
+							<option label="30108" help="480p">2</option>
+							<option label="30109" help="720p">3</option>
+							<option label="30110" help="1080p">4</option>
+							<option label="30111" help="Best">5</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="showAdult" type="boolean" label="30003" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="hoster" label="30034">
+				<setting id="hosterSelect" type="string" label="30005" help="">
+					<level>0</level>
+					<default>30129</default>
+					<constraints>
+						<options>
+							<option label="30129">Dialog</option>
+							<option label="30130">Auto</option>
+							<option label="30131">List</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="maxHoster" type="integer" label="30007" help="">
+					<level>0</level>
+					<default>100</default>
+					<constraints>
+						<minimum>10</minimum>
+						<step>1</step>
+						<maximum>1000</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="presortHoster" type="boolean" label="30009" help="">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="hosterSelect">30130</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="blockedHoster" type="string" label="30404" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30527</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="networkSettings" label="30035">
+				<setting id="cacheTime" type="integer" label="30006" help="">
+					<level>0</level>
+					<default>600</default>
+					<constraints>
+						<minimum>0</minimum>
+						<step>60</step>
+						<maximum>1800</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="requestTimeout" type="integer" label="30014" help="">
+					<level>0</level>
+					<default>10</default>
+					<constraints>
+						<minimum>1</minimum>
+						<step>1</step>
+						<maximum>60</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="cacheDeltaDay" type="integer" label="30164" help="">
+					<level>0</level>
+					<default>2</default>
+					<constraints>
+						<minimum>1</minimum>
+						<step>1</step>
+						<maximum>14</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="delHtmlCache" type="action" label="30165" help="">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.xstream/?function=clearCache)</data>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="updates" label="14303" help="">
+			<group id="xstream.updates" label="30096">
+				<setting id="githubUpdateXstream" type="boolean" label="30010" help="30411">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="xstream.branch" type="string" label="30406" help="30173">
+					<level>0</level>
+					<default>release</default>
+					<constraints>
+						<options>
+							<option label="Release">release</option>
+							<option label="Nightly (Kodi 20.x/21.x)">nightly</option>
+						</options>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateXstream">true</dependency>
+					</dependencies>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+			<group id="resolver.updates" label="30030">
+				<setting id="githubUpdateResolver" type="boolean" label="30015" help="30411">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="resolver.branch" type="string" label="30098" help="30101">
+					<level>0</level>
+					<default>release</default>
+					<constraints>
+						<options>
+							<option label="Release">release</option>
+							<option label="Nightly">nightly</option>
+						</options>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateResolver">true</dependency>
+					</dependencies>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+			<group id="notification" label="30270">
+				<setting id="update.notification" type="string" label="30271" help="">
+					<level>0</level>
+					<default>full</default>
+					<constraints>
+						<options>
+							<option label="30272">simple</option>
+							<option label="30273">full</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="popup.update.notification" type="boolean" label="30274" help="">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="start.popup.update.notification" type="action" label="30276" help="">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.xstream/?function=changelog)</data>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="account" label="30024" help="">
+			<group id="aniworldacc" label="30700">
+				<setting id="aniworld.user" type="string" label="30083" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30083</heading>
+					</control>
+				</setting>
+				<setting id="aniworld.pass" type="string" label="30084" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30084</heading>
+						<hidden>true</hidden>
+					</control>
+				</setting>
+			</group>
+			<group id="flimmerstubeacc" label="30703">
+				<setting id="flimmerstube.user" type="string" label="30083" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30083</heading>
+					</control>
+				</setting>
+				<setting id="flimmerstube.pass" type="string" label="30084" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30084</heading>
+						<hidden>true</hidden>
+					</control>
+				</setting>
+			</group>
+			<group id="serienstreamacc" label="30714">
+				<setting id="serienstream.user" type="string" label="30083" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30083</heading>
+					</control>
+				</setting>
+				<setting id="serienstream.pass" type="string" label="30084" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30084</heading>
+						<hidden>true</hidden>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<!-- Kategorie Indexseiten 1 (30094) und Indexseiten 2 (30095) werden vom PluginHandler gesetzt und sind somit kein fester Bestandteil der settings.xml -->
+		<category id="indexsite1" label="30094">
+			<group id="aniworld" label="30700">
+				<setting id="plugin_aniworld" type="boolean" label="30050" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_aniworld" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_aniworld">False</dependency>
+					</dependencies>	
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_aniworld_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_aniworld">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_aniworld">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_aniworld.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_aniworld">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_aniworld">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="cinemathek" label="30720">
+				<setting id="plugin_cinemathek" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_cinemathek" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_cinemathek_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_cinemathek.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="dokus4" label="30701">
+				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_dokus4" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_dokus4">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="filmpalast" label="30702">
+				<setting id="plugin_filmpalast" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_filmpalast" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_filmpalast">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_filmpalast_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_filmpalast">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_filmpalast">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_filmpalast.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_filmpalast">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_filmpalast">false</dependency>
+					</dependencies>>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_flimmerstube" label="30703">
+				<setting id="plugin_flimmerstube" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_flimmerstube" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_flimmerstube">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_flimmerstube_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_flimmerstube">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_flimmerstube">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_flimmerstube.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_flimmerstube">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_flimmerstube">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_hdfilme" label="30704">
+				<setting id="plugin_hdfilme" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_hdfilme" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_hdfilme_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_hdfilme">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_hdfilme.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_hdfilme">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="internetarchive" label="30712">
+				<setting id="plugin_internetarchive" type="boolean" label="30050" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_internetarchive" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_internetarchive">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="plugin_kinoger" label="30717">
+				<setting id="plugin_kinoger" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_kinoger" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinoger">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_kinoger_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinoger">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinoger">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_kinoger.domain" type="string" label="30051">
+					<level>3</level>
+					<default>kinoger.com</default>
+					<constraints>
+						<options>
+							<option label="kinoger.com">kinoger.com</option>
+							<option label="kinoger.to">kinoger.to</option>
+						</options>
+					<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinoger">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinoger">false</dependency>
+					</dependencies>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+			<group id="plugin_kinokiste" label="30706">
+				<setting id="plugin_kinokiste" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_kinokiste" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinokiste">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_kinokiste_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinokiste">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinokiste">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_kinokiste.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinokiste">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinokiste">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+            <group id="plugin_kinox" label="30708">
+				<setting id="plugin_kinox" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_kinox" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinox">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_kinox_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinox">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinox">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_kinox.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kinox">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kinox">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<!-- Kategorie Indexseiten 1 (30094) und Indexseiten 2 (30095) werden vom PluginHandler gesetzt und sind somit kein fester Bestandteil der settings.xml -->
+		<category id="indexsite2" label="30095">
+			<group id="plugin_kkiste" label="30709">
+				<setting id="plugin_kkiste" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_kkiste" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kkiste">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_kkiste_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kkiste">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kkiste">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_kkiste.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_kkiste">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_kkiste">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_megakino" label="30710">
+				<setting id="plugin_megakino" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_megakino" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_megakino">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_megakino_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_megakino">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_megakino">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_megakino.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_megakino">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_megakino">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_moflix-stream" label="30728">
+				<setting id="plugin_moflix-stream" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_moflix-stream" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_moflix-stream">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_moflix-stream_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_moflix-stream">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_moflix-stream">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_moflix-stream.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_moflix-stream">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_moflix-stream">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+            <group id="plugin_movie2k" label="30715">
+				<setting id="plugin_movie2k" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_movie2k" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie4k">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_movie2k_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie2k">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_movie2k">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_movie2k.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie2k">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_movie2k">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_movie4k" label="30711">
+				<setting id="plugin_movie4k" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_movie4k" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie4k">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_movie4k_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie4k">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_movie4k">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_movie4k.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_movie4k">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_movie4k">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_netzkino" label="30713">
+				<setting id="plugin_netzkino" type="boolean" label="30050" help="30411">
+					<level>0</level>
+					<default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_netzkino" type="boolean" label="30052">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_netzkino">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="plugin_serienstream" label="30714">
+				<setting id="plugin_serienstream" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_serienstream" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_serienstream">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_serienstream_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_serienstream">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_serienstream">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_serienstream.domain" type="string" label="30051">
+					<level>3</level>
+					<default>s.to</default>
+					<constraints>
+						<options>
+							<option label="s.to">s.to</option>
+							<option label="serienstream.to">serienstream.to</option>
+							<option label="Proxy Server">186.2.175.5</option>
+						</options>
+					<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_serienstream">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_serienstream">false</dependency>
+					</dependencies>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+			<group id="plugin_streamcloud" label="30725">
+				<setting id="plugin_streamcloud" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_streamcloud" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_streamcloud">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_streamcloud_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_streamcloud">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_streamcloud">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_streamcloud.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_streamcloud">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_streamcloud">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_xcine" label="30716">
+				<setting id="plugin_xcine" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_xcine" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_xcine">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_xcine_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_xcine">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_xcine">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_xcine.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_xcine">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_xcine">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="indexsiteVoD" label="30407" help="">
+			<group id="indexpageVod" label="30408">
+				<setting id="indexVoDyes" type="boolean" label="30409" help="30411">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="plugin_vod_huhu" label="30790">
+				<setting id="plugin_vod_huhu" type="boolean" label="30050" help="">
+					<level>0</level>
+                    <default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_vod_huhu_checkDomain" type="boolean" label="30410">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_huhu">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_huhu">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_vod_huhu.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_huhu">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_huhu">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_vod_kool" label="30791">
+				<setting id="plugin_vod_kool" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_vod_kool_checkDomain" type="boolean" label="30410">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_kool">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_kool">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_vod_kool.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_kool">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_kool">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_vod_oha" label="30792">
+				<setting id="plugin_vod_oha" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_vod_oha_checkDomain" type="boolean" label="30410">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_oha">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_oha">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_vod_oha.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_oha">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_oha">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="plugin_vod_vavoo" label="30793">
+				<setting id="plugin_vod_vavoo" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_vod_vavoo_checkDomain" type="boolean" label="30410">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_vavoo">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_vavoo">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_vod_vavoo.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_vod_vavoo">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_vod_vavoo">false</dependency>
+						<dependency type="enable" operator="!is" setting="indexVoDyes">false</dependency>
+						<dependency type="visible" operator="!is" setting="indexVoDyes">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="tmdb" label="30174" help="">
+			<group id="tmdbhandler" label="30033">
+				<setting id="TMDBMETA" type="boolean" label="30004" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="metaOverwrite" type="boolean" label="30008" help="">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="TMDBMETA">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="advanced" type="boolean" label="30044" help="">
+					<level>0</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="TMDBMETA">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="poster_tmdb" type="string" label="30170" help="">
+					<level>0</level>
+					<default>w342</default>
+					<constraints>
+						<options>
+							<option label="w92">w92</option>
+							<option label="w154">w154</option>
+							<option label="w185">w185</option>
+							<option label="w342">w342</option>
+							<option label="w500">w500</option>
+							<option label="w780">w780</option>
+							<option label="original">original</option>
+						</options>
+					</constraints>
+					<control type="list" format="string">
+						<heading>30170</heading>
+					</control>
+				</setting>
+				<setting id="backdrop_tmdb" type="string" label="30171" help="">
+					<level>0</level>
+					<default>w1280</default>
+					<constraints>
+						<options>
+							<option label="w300">w300</option>
+							<option label="w780">w780</option>
+							<option label="w1280">w1280</option>
+							<option label="original">original</option>
+						</options>
+					</constraints>
+					<control type="list" format="string">
+						<heading>30171</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="extentedtmdbhandler" label="30080">
+				<setting id="tmdb_lang" type="string" label="30172" help="">
+					<level>0</level>
+					<default>de</default>
+					<constraints>
+						<options>
+							<option label="30175">en</option>
+							<option label="30176">de</option>
+							<option label="30177">fr</option>
+							<option label="30178">it</option>
+							<option label="30179">nl</option>
+							<option label="30180">sv</option>
+							<option label="30181">cs</option>
+							<option label="30182">da</option>
+							<option label="30183">fi</option>
+							<option label="30184">pl</option>
+							<option label="30185">es</option>
+							<option label="30186">el</option>
+							<option label="30187">tr</option>
+							<option label="30188">uk</option>
+							<option label="30189">ru</option>
+							<option label="30190">kn</option>
+							<option label="30191">ga</option>
+							<option label="30192">hr</option>
+							<option label="30193">hu</option>
+							<option label="30194">ja</option>
+							<option label="30195">no</option>
+							<option label="30196">id</option>
+							<option label="30197">ko</option>
+							<option label="30198">pt</option>
+							<option label="30199">lv</option>
+							<option label="30200">lt</option>
+							<option label="30201">ro</option>
+							<option label="30202">sk</option>
+							<option label="30203">sl</option>
+							<option label="30204">sq</option>
+							<option label="30205">sr</option>
+							<option label="30206">th</option>
+							<option label="30207">vi</option>
+							<option label="30208">bg</option>
+							<option label="30209">fa</option>
+							<option label="30210">hy</option>
+							<option label="30211">ka</option>
+							<option label="30212">ar</option>
+							<option label="30213">af</option>
+							<option label="30214">bs</option>
+							<option label="30215">zh</option>
+							<option label="30216">cn</option>
+							<option label="30217">hi</option>
+						</options>
+					</constraints>
+					<control type="list" format="string">
+						<heading>30172</heading>
+					</control>
+				</setting>
+				<setting id="Color" type="string" label="30133" help="">
+					<level>0</level>
+					<default>lightblue</default>
+					<constraints>
+						<options>
+							<option label="30218">lightblue</option>
+							<option label="30219">lightcoral</option>
+							<option label="30220">lightcyan</option>
+							<option label="30221">lightgreen</option>
+							<option label="30222">lightgrey</option>
+							<option label="30223">lightpink</option>
+							<option label="30224">lightsalmon</option>
+							<option label="30225">lightseagreen</option>
+							<option label="30226">lightskyblue</option>
+							<option label="30227">lightslategray</option>
+							<option label="30228">lightsteelblue</option>
+							<option label="30229">lightyellow</option>
+							<option label="30230">aliceblue</option>
+							<option label="30231">coral</option>
+							<option label="30232">lavender</option>
+							<option label="30233">lemonchiffon</option>
+							<option label="30234">moccasin</option>
+							<option label="30235">pink</option>
+							<option label="30236">plum</option>
+							<option label="30237">powderblue</option>
+							<option label="30238">seashell</option>
+						</options>
+					</constraints>
+					<control type="list" format="string">
+						<heading>30133</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="view" label="30022" help="">
+			<group id="views" label="30022">
+				<setting id="auto-view" type="boolean" label="30060" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="files-view" type="integer" label="30061" help="">
+					<level>0</level>
+					<default>55</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="auto-view">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30061</heading>
+					</control>
+				</setting>
+				<setting id="movies-view" type="integer" label="30062" help="">
+					<level>0</level>
+					<default>503</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="auto-view">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30062</heading>
+					</control>
+				</setting>
+				<setting id="tvshows-view" type="integer" label="30063" help="">
+					<level>0</level>
+					<default>503</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="auto-view">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30063</heading>
+					</control>
+				</setting>
+				<setting id="seasons-view" type="integer" label="30064" help="">
+					<level>0</level>
+					<default>504</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="auto-view">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30064</heading>
+					</control>
+				</setting>
+				<setting id="episodes-view" type="integer" label="30065" help="">
+					<level>0</level>
+					<default>504</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="auto-view">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30065</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="download" label="30023" help="">
+			<group id="downloads" label="30023">
+				<setting id="download-folder" type="path" label="30081" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="path">
+						<heading>30081</heading>
+					</control>
+				</setting>
+				<setting id="backgrounddownload" type="boolean" label="30132" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="downloadplugins" label="30070">
+				<setting id="jd_enabled" type="boolean" label="30071" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="jd_host" type="string" label="30072" help="">
+					<level>0</level>
+					<default>127.0.0.1</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="jd_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30072</heading>
+					</control>
+				</setting>
+				<setting id="jd_port" type="integer" label="30073" help="">
+					<level>0</level>
+					<default>10025</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="jd_enabled">False</dependency>
+					</dependencies>	
+					<control type="edit" format="integer">
+						<heading>30073</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="downloadplugins1" label="30076">
+				<setting id="jd2_enabled" type="boolean" label="30077" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="jd2_host" type="string" label="30072" help="">
+					<level>0</level>
+					<default>127.0.0.1</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="jd2_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30072</heading>
+					</control>
+				</setting>
+				<setting id="jd2_port" type="integer" label="30073" help="">
+					<level>0</level>
+					<default>9666</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="jd2_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30073</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="downloadplugins2" label="30090">
+				<setting id="myjd_enabled" type="boolean" label="30091" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="myjd_device" type="string" label="30092" help="">
+					<level>0</level>
+					<default>JDownloader@Device</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="myjd_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30092</heading>
+					</control>
+				</setting>
+				<setting id="myjd_user" type="string" label="30083" help="">
+					<level>0</level>
+					<default>example@example.com</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="myjd_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30083</heading>
+					</control>
+				</setting>
+				<setting id="myjd_pass" type="string" label="30084" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="myjd_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30084</heading>
+						<hidden>true</hidden>
+					</control>
+				</setting>
+			</group>
+			<group id="downloadplugins3" label="30257">
+				<setting id="pyload_enabled" type="boolean" label="30082" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="pyload_host" type="string" label="30072" help="">
+					<level>0</level>
+					<default>127.0.0.1</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="pyload_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30072</heading>
+					</control>
+				</setting>
+				<setting id="pyload_port" type="integer" label="30073" help="">
+					<level>0</level>
+					<default>8000</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="pyload_enabled">False</dependency>
+					</dependencies>	
+					<control type="edit" format="integer">
+						<heading>30073</heading>
+					</control>
+				</setting>
+				<setting id="pyload_user" type="string" label="30083" help="">
+					<level>0</level>
+					<default>user</default>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="pyload_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30083</heading>
+					</control>
+				</setting>
+				<setting id="pyload_passwd" type="string" label="30084" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="pyload_enabled">False</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30084</heading>
+						<hidden>true</hidden>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="xstream.dev" label="30310" help="">
+			<group id="xstream.dev.updates" label="30311">
+				<setting id="githubUpdateDevXstream" type="boolean" label="30312" help="30411">
+					<level>3</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="xstream.dev.id" type="string" label="30313" help="30317">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateDevXstream">true</dependency>
+					</dependencies>
+					<control type="edit" format="string"/>
+						<heading>30310</heading>
+				</setting>
+				<setting id="xstream.dev.username" type="string" label="30314" help="30318">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateDevXstream">true</dependency>
+					</dependencies>
+					<control type="edit" format="string"/>
+						<heading>30310</heading>
+				</setting>
+				<setting id="xstream.dev.branch" type="string" label="30315" help="30319">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateDevXstream">true</dependency>
+					</dependencies>
+					<control type="edit" format="string"/>
+						<heading>30310</heading>
+				</setting>
+				<setting id="xstream.dev.token" type="string" label="30316" help="30320">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="visible" setting="githubUpdateDevXstream">true</dependency>
+					</dependencies>
+					<control type="edit" format="string"/>
+						<heading>30310</heading>
+				</setting>
+			</group>
+		</category>
+		<!-- # Hidden -->
+		<category>
+			<group>
+				<setting id="enforceUpdate" type="boolean" label="30102" help="">
+					<level>0</level>
+					<default>False</default>
+					<visible>False</visible>
+					<control type="toggle"/>
+				</setting>
+				<setting id="newSetting" type="boolean" label="newSetting" help="">
+					<level>0</level>
+					<default>True</default>
+					<visible>False</visible>
+					<control type="toggle"/>
+				</setting>
+			</group>
+		</category>
+	</section>
+</settings>
