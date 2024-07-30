@@ -1057,6 +1057,14 @@ msgctxt "#30320"
 msgid "Please enter the developer token you received here"
 msgstr "Geben Sie hier bitte den Entwickler Token ein, den Sie erhalten haben"
 
+msgctxt "#30321"
+msgid "[COLOR red]Show warning about handling developer options now![/COLOR]"
+msgstr "[COLOR red]Warnung vor dem Umgang der Entwickler Optionen jetzt anzeigen![/COLOR]"
+
+msgctxt "#30322"
+msgid "[B][COLOR cyan]xStream[/COLOR] [COLOR white]Warning (Developer Options)[/COLOR][/B]"
+msgstr "[B][COLOR cyan]xStream[/COLOR] [COLOR white]Warnhinweis (Entwickler Optionen)[/COLOR][/B]"
+
 msgctxt "#30402"
 msgid "Countries"
 msgstr "Länder"
