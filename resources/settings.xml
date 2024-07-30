@@ -1524,6 +1524,15 @@
 					<default>False</default>
 					<control type="toggle"/>
 				</setting>
+				<setting id="xstream.dev.notification" type="action" label="30321" help="">
+					<level>0</level>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<data>RunPlugin(plugin://plugin.video.xstream/?function=devWarning)</data>
+					</control>
+				</setting>
 				<setting id="xstream.dev.id" type="string" label="30313" help="30317">
 					<level>3</level>
 					<default/>
