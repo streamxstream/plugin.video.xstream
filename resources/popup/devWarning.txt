@@ -1,0 +1,11 @@
+[COLOR red]
+[B]Warnung vor Missbrauch dieser Entwickler Optionen[/B]
+[I]
+Diese Einstellungen sind nur für Entwickler gedacht, aktivieren
+Sie die Optionen nur wenn Sie vom xStream-Team Zugangsdaten
+erhalten haben !!!
+
+Bei Aktivierung mit falschen Zugangsdaten kann die bestehende 
+Installation beschädigt werden!
+[/I]
+[/COLOR]
