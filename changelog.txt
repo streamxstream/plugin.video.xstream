@@ -1,11 +1,15 @@
-[B]Version: 4.1.0[/B]
+[B]Version: 4.0.11 Nightly 2[/B]
 
 01.08.2024
 
- - [Domains] Diverse Domainanpassungen
- - [Intern] Code-Optimierungen und Performance Verbesserungen
- - [Allgemein] Anpassung an neue Repository
- - [Settings] Entwickler-Optionen hinzugefügt(Hinweis beachten!)
+ - [Cinemathek] Wieder hinzugefügt
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
+
+26.07.2024
+
+ - Diverse Domainanpassungen
+ - [intern] Code-Optimierungen und Performance Verbesserungen
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 [I]*Editierhinweis: Text nicht länger als die Linie. Keine Tabulatoren verwenden![/I]
