@@ -1,4 +1,10 @@
-[B]Version: 4.1.1 Nightly 1[/B]
+[B]Version: 4.1.1 Nightly 2[/B]
+
+03.08.2024
+
+ - [kinoger] Hoster kinoger.pw überarbeitet @thx to Kasi
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 01.08.2024
 
