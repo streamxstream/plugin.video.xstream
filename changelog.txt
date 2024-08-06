@@ -1,4 +1,11 @@
-[B]Version: 4.1.1 Nightly 2[/B]
+[B]Version: 4.1.1 Nightly 3[/B]
+
+05.08.2024
+
+- [Filmpalast] Filemoon fixed
+- [KinoGer] überarbeitet KinoGer.re hinzugefügt
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 03.08.2024
 
