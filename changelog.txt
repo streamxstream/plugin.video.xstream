@@ -1,11 +1,12 @@
-[B]Version: 4.1.0[/B]
+[B]Version: 4.1.1 Release[/B]
 
-01.08.2024
+26.07.2024 - 11.08.2024
 
- - [Domains] Diverse Domainanpassungen
- - [Intern] Code-Optimierungen und Performance Verbesserungen
- - [Allgemein] Anpassung an neue Repository
- - [Settings] Entwickler-Optionen hinzugefügt(Hinweis beachten!)
+ - [Filmpalast] Filemoon fixed
+ - [KinoGer] überarbeitet und KinoGer.re hinzugefügt
+ - [Cinemathek] Wieder hinzugefügt
+ - [Diverses] Domainanpassungen
+ - [intern] Code-Optimierungen und Performance Verbesserungen
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 [I]*Editierhinweis: Text nicht länger als die Linie. Keine Tabulatoren verwenden![/I]
