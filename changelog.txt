@@ -1,27 +1,11 @@
-[B]Version: 4.1.1 Nightly 3[/B]
+[B]Version: 4.1.1 Release[/B]
 
-05.08.2024
+26.07.2024 - 11.08.2024
 
-- [Filmpalast] Filemoon fixed
-- [KinoGer] überarbeitet KinoGer.re hinzugefügt
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-03.08.2024
-
- - [kinoger] Hoster kinoger.pw überarbeitet @thx to Kasi
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-01.08.2024
-
+ - [Filmpalast] Filemoon fixed
+ - [KinoGer] überarbeitet und KinoGer.re hinzugefügt
  - [Cinemathek] Wieder hinzugefügt
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-26.07.2024
-
- - Diverse Domainanpassungen
+ - [Diverses] Domainanpassungen
  - [intern] Code-Optimierungen und Performance Verbesserungen
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.xstream" name="xStream" version="4.1.1~nightly3" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="4.1.1" provider-name="xStream-Team">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -16,21 +16,26 @@
 	</extension>
     <extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de">Schau über xStream!</summary>
-		<summary lang="en_GB">Watch over xStream!</summary>
-		<description lang="de">Mit diesem Addon kannst du auf angebotene Streams, verschiedener Quellen zugreifen.</description>
-		<description lang="en_GB">With this addon you can access streams offered by various sources.</description>
-		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-		<disclaimer lang="en_GB">The content represented by this addon is not hosted or distributed by the creators of the addon, nor are the creators affiliated with the content providers in any way.</disclaimer>
-		<source>https://github.com/streamxstream/plugin.video.xstream</source>
-		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
-		<license>GNU GPLv3</license>
+		<summary lang="de">xStream: Das Original</summary>
+		<summary lang="en_GB">xStream: The Original</summary>
+		<description lang="de">xStream ist ein Video-Addon für Kodi. xStream dient als Suchmaschine für Filme und Serien auf verschiedenen Webseiten.</description>
+		<description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
+		<disclaimer lang="de">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
+		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
+		<language>de en</language>
 		<platform>all</platform>
-		<news>xStream PY3 Kodi 19/20</news>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
+		<source>https://github.com/streamxstream</source>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/art/screenshot.jpg</screenshot>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/banner.png</banner>
+			<clearlogo>resources/clearlogo.png</clearlogo>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
