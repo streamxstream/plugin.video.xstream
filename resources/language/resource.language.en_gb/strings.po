@@ -95,6 +95,10 @@ msgctxt "#30024"
 msgid "Accounts"
 msgstr ""
 
+msgctxt "#30025"
+msgid "Evade DNS lock"
+msgstr ""
+
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr ""
@@ -910,7 +914,7 @@ msgid "Your ISP censors your Internet access!"
 msgstr ""
 
 msgctxt "#30261"
-msgid "To protect yourself from censorship, we recommend to change your DNS at your router and/or boxes to Google or Cloudflare - for both ipV4 and ipV6 protocols. Instructions can be found with a Google search, e.g. 'Change Fritzbox DNS Server'"
+msgid "To protect yourself from censorship, we recommend to use the new setting in xStream called 'Evade DNS lock' or change your DNS at your router and/or boxes to Google or Cloudflare - for both ipV4 and ipV6 protocols. Instructions can be found with a Google search, e.g. 'Change Fritzbox DNS Server'"
 msgstr ""
 
 msgctxt "#30262"

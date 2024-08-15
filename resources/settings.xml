@@ -99,6 +99,11 @@
 				</setting>
 			</group>
 			<group id="networkSettings" label="30035">
+				<setting id="bypassDNSlock" type="boolean" label="30025" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
 				<setting id="cacheTime" type="integer" label="30006" help="">
 					<level>0</level>
 					<default>600</default>
@@ -881,6 +886,7 @@
 					<dependencies>
 						<dependency type="enable" operator="!is" setting="plugin_serienstream">false</dependency>
 						<dependency type="visible" operator="!is" setting="plugin_serienstream">false</dependency>
+						<dependency type="visible" setting="bypassDNSlock">false</dependency>
 					</dependencies>
 					<control type="spinner" format="string"/>
 				</setting>

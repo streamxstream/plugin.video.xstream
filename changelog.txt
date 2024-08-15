@@ -1,12 +1,17 @@
-[B]Version: 4.1.1 Release[/B]
+[B]Version: 4.1.2 Nightly 1[/B]
 
-26.07.2024 - 11.08.2024
+15.08.2024
 
- - [Filmpalast] Filemoon fixed
- - [KinoGer] überarbeitet und KinoGer.re hinzugefügt
- - [Cinemathek] Wieder hinzugefügt
- - [Diverses] Domainanpassungen
- - [intern] Code-Optimierungen und Performance Verbesserungen
+- [intern] Neuer Schalter in den Einstellungen/Allgemeines bei Netzwerk:
+  [B]DNS Sperre umgehen[/B]
+  Wird dieser Schalter aktiviert umgeht xStream die DNS Sperren bei folgenden Seiten:
+  Serienstream, Megakino, Filmpalast, Kinox (hat aktuell noch Cloudflare-Schutz).
+  Somit ist kein Umstellen im Router oder per APK etc. nötig.
+  Sollte es mit der neuen Funktion Probleme geben bitte wieder in den
+  Einstellungen/Aktualisierungen das Update auf Release stellen und xStream neu
+  starten, danach sind die Einstellungen wieder wie vorher.
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
+
+
 [I]*Editierhinweis: Text nicht länger als die Linie. Keine Tabulatoren verwenden![/I]
