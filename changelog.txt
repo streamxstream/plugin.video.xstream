@@ -1,6 +1,8 @@
-[B]Version: 4.1.2 Nightly 1[/B]
+[B]Version: 4.1.2 Nightly 2[/B]
 
 15.08.2024
+
+- [**Update**] Fix für nicht angezeigte Domains in den Einstellungen
 
 - [intern] Neuer Schalter in den Einstellungen/Allgemeines bei Netzwerk:
   [B]DNS Sperre umgehen[/B]
