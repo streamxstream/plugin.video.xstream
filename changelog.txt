@@ -1,7 +1,8 @@
-[B]Version: 4.1.2 Nightly 3[/B]
+[B]Version: 4.1.2 Nightly 4[/B]
 
 16.08.2024
 
+- [Serienstream] Redirect-Fehler in Verbindung mit [B]DNS Sperre umgehen[/B] behoben
 - [Serienstream] Fix für Abspielprobleme wenn [B]DNS Sperre umgehen[/B] aktiv
 
 15.08.2024
