@@ -317,15 +317,20 @@
 				</setting>
 				<setting id="plugin_aniworld.domain" type="string" label="30278" help="">
 					<level>3</level>
-					<default/>
+					<default>anicloud.io</default>
 					<constraints>
-						<allowempty>true</allowempty>
+						<options>
+							<option label="Aniworld.to">aniworld.to</option>
+							<option label="Aniworld.info">www.aniworld.info</option>
+							<option label="Anicloud.io">anicloud.io</option>
+							<allowempty>true</allowempty>
+						</options>
 					</constraints>
 					<dependencies>
 						<dependency type="enable" operator="!is" setting="plugin_aniworld">false</dependency>
 						<dependency type="visible" operator="!is" setting="plugin_aniworld">false</dependency>
 					</dependencies>
-					<control type="edit" format="string">
+					<control type="spinner" format="string">
 						<heading>30278</heading>
 					</control>
 				</setting>
