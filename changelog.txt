@@ -1,4 +1,8 @@
-[B]Version: 4.1.2 Nightly 6[/B]
+[B]Version: 4.1.2 Nightly 7[/B]
+
+21.08.2024
+
+- [Cinemathek] Siteplugin in den Ruhestand geschickt, und den Hep in den Urlaub ;)
 
 18.08.2024
 

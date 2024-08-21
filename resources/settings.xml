@@ -317,7 +317,7 @@
 				</setting>
 				<setting id="plugin_aniworld.domain" type="string" label="30278" help="">
 					<level>3</level>
-					<default>anicloud.io</default>
+					<default>aniworld.to</default>
 					<constraints>
 						<options>
 							<option label="Aniworld.to">aniworld.to</option>
@@ -335,7 +335,7 @@
 					</control>
 				</setting>
 			</group>
-			<group id="cinemathek" label="30720">
+			<!--group id="cinemathek" label="30720">
 				<setting id="plugin_cinemathek" type="boolean" label="30050" help="30411">
 					<level>0</level>
                     <default>True</default>
@@ -349,7 +349,6 @@
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
-				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
 				<setting id="plugin_cinemathek_checkDomain" type="boolean" label="30277">
 					<level>3</level>
 					<default>True</default>
@@ -373,7 +372,7 @@
 						<heading>30278</heading>
 					</control>
 				</setting>
-			</group>
+			</group-->
 			<group id="dokus4" label="30701">
 				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
 					<level>0</level>
