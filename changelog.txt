@@ -1,8 +1,16 @@
-[B]Version: 4.1.2 Nightly 7[/B]
+[B]Version: 4.1.2 Nightly 8[/B]
+
+25.08.2024
+
+- [Filmpalast] Anpassung Referrer für Swiftload
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 21.08.2024
 
 - [Cinemathek] Siteplugin in den Ruhestand geschickt, und den Hep in den Urlaub ;)
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 18.08.2024
 
@@ -12,10 +20,14 @@
 	Stream in HD(GX.Player) repariert
 - [Movie4k] Domain Anpassung
 
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
+
 16.08.2024
 
 - [Serienstream] Redirect-Fehler in Verbindung mit [B]DNS Sperre umgehen[/B] behoben
 - [Serienstream] Fix für Abspielprobleme wenn [B]DNS Sperre umgehen[/B] aktiv
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 15.08.2024
 
