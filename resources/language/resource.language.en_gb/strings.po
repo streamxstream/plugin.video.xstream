@@ -1114,6 +1114,74 @@ msgctxt "#30412"
 msgid "Video on demand services"
 msgstr ""
 
+msgctxt "#30413"
+msgid "[B]Device - Information:[/B]"
+msgstr ""
+
+msgctxt "#30414"
+msgid "[B]Plugin - Information:[/B]"
+msgstr ""
+
+msgctxt "#30415"
+msgid "Update enabled - Branch: "
+msgstr ""
+
+msgctxt "#30416"
+msgid "Update disabled - Branch: "
+msgstr ""
+
+msgctxt "#30417"
+msgid "xStream DNS Status: Bypass DNS block"
+msgstr ""
+
+msgctxt "#30418"
+msgid "enabled"
+msgstr ""
+
+msgctxt "#30419"
+msgid "disabled"
+msgstr ""
+
+msgctxt "#30420"
+msgid "[B]DNS - Information:[/B]"
+msgstr ""
+
+msgctxt "#30421"
+msgid "[B]Repository - Information:[/B]"
+msgstr ""
+
+msgctxt "#30422"
+msgid "[B]Index pages - Information:[/B]"
+msgstr ""
+
+msgctxt "#30423"
+msgid "Index page"
+msgstr ""
+
+msgctxt "#30424"
+msgid "Domain used for the index page"
+msgstr ""
+
+msgctxt "#30425"
+msgid "Status code of the domain used"
+msgstr ""
+
+msgctxt "#30426"
+msgid "Global search of the index page"
+msgstr ""
+
+msgctxt "#30427"
+msgid "Domain works without problems"
+msgstr ""
+
+msgctxt "#30428"
+msgid "Domain is permanently forwarded"
+msgstr ""
+
+msgctxt "#30429"
+msgid "Domain is currently unavailable"
+msgstr ""
+
 ############### Scaper Language ###############
 
 msgctxt "#30500"

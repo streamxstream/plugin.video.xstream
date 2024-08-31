@@ -1,4 +1,22 @@
-[B]Version: 4.1.2 Nightly 8[/B]
+[B]Version: 4.1.2 Nightly 9[/B]
+
+29.08.2024
+
+- [Tools] xStream Supportinformationen entfernt
+- [PluginHandler] xStream Supportinformationen hinzugefügt und erweitert,
+  CheckDomain überarbeitet
+- [Alle Site-Plugins] Status Abfrage hinzugefügt
+- [KKiste] Domain Anpassung
+- [Movie2k] Anpassung Origin
+- [Movie4k] Anpassung Domain
+- [SerienStream] Neue Domain hinzugefügt
+- [Einstellungen] Divierse Anpassungen
+- [Sprachdateien] erweitert
+- [xStream] Anpassung PluginInfo
+
+ES IST ZWINGEND EIN NEUSTART ERFODERLICH!
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 25.08.2024
 

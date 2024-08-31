@@ -1114,6 +1114,74 @@ msgctxt "#30412"
 msgid "Video on demand services"
 msgstr "Video on Demand Dienste"
 
+msgctxt "#30413"
+msgid "[B]Device - Information:[/B]"
+msgstr "[B]Geräte - Informationen:[/B]"
+
+msgctxt "#30414"
+msgid "[B]Plugin - Information:[/B]"
+msgstr "[B]Plugin - Informationen:[/B]"
+
+msgctxt "#30415"
+msgid "Update enabled - Branch: "
+msgstr "Aktualisierung aktiviert - Branch: "
+
+msgctxt "#30416"
+msgid "Update disabled - Branch: "
+msgstr "Aktualisierung deaktiviert - Branch: "
+
+msgctxt "#30417"
+msgid "xStream DNS Status: Bypass DNS block"
+msgstr "xStream DNS Status: DNS Sperre umgehen"
+
+msgctxt "#30418"
+msgid "enabled"
+msgstr "aktiviert"
+
+msgctxt "#30419"
+msgid "disabled"
+msgstr "deaktiviert"
+
+msgctxt "#30420"
+msgid "[B]DNS - Information:[/B]"
+msgstr "[B]DNS - Informationen:[/B]"
+
+msgctxt "#30421"
+msgid "[B]Repository - Information:[/B]"
+msgstr "[B]Repository - Informationen:[/B]"
+
+msgctxt "#30422"
+msgid "[B]Index pages - Information:[/B]"
+msgstr "[B]Indexseiten - Informationen:[/B]"
+
+msgctxt "#30423"
+msgid "Index page"
+msgstr "Indexseite"
+
+msgctxt "#30424"
+msgid "Domain used for the index page"
+msgstr "Verwendete Domain der Indexseite"
+
+msgctxt "#30425"
+msgid "Status code of the domain used"
+msgstr "Status Code der verwendeten Domain"
+
+msgctxt "#30426"
+msgid "Global search of the index page"
+msgstr "Globale Suche der Indexseite"
+
+msgctxt "#30427"
+msgid "Domain works without problems"
+msgstr "Domain funktioniert problemlos"
+
+msgctxt "#30428"
+msgid "Domain is permanently forwarded"
+msgstr "Domain wird permanent weitergeleitet"
+
+msgctxt "#30429"
+msgid "Domain is currently unavailable"
+msgstr "Domain ist derzeit nicht erreichbar"
+
 ############### Scaper Language ###############
 
 msgctxt "#30500"

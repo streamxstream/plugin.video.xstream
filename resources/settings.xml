@@ -321,7 +321,7 @@
 					<constraints>
 						<options>
 							<option label="Aniworld.to">aniworld.to</option>
-							<option label="Aniworld.info">www.aniworld.info</option>
+							<option label="Aniworld.info(VPN)">www.aniworld.info</option>
 							<option label="Anicloud.io">anicloud.io</option>
 							<allowempty>true</allowempty>
 						</options>
@@ -376,7 +376,7 @@
 			<group id="dokus4" label="30701">
 				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
 					<level>0</level>
-					<default>True</default>
+					<default>False</default>
 					<control type="toggle"/>
 				</setting>
 				<setting id="global_search_dokus4" type="boolean" label="30052">
@@ -386,6 +386,30 @@
 						<dependency type="enable" operator="!is" setting="plugin_dokus4">False</dependency>
 					</dependencies>
 					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_dokus4_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>False</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_dokus4">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_dokus4">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_dokus4.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_dokus4">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_dokus4">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
 				</setting>
 			</group>
 			<group id="filmpalast" label="30702">
@@ -515,7 +539,7 @@
 					<level>0</level>
 					<default>False</default>
 					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_internetarchive">false</dependency>
+						<dependency type="enable" operator="!is" setting="plugin_internetarchive">False</dependency>
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
@@ -549,8 +573,8 @@
 					<default>kinoger.com</default>
 					<constraints>
 						<options>
-							<option label="kinoger.com">kinoger.com</option>
-							<option label="kinoger.to">kinoger.to</option>
+							<option label="KinoGer.com">kinoger.com</option>
+							<option label="KinoGer.to">kinoger.to</option>
 						</options>
 					<allowempty>true</allowempty>
 					</constraints>
@@ -881,9 +905,10 @@
 					<default>s.to</default>
 					<constraints>
 						<options>
-							<option label="s.to">s.to</option>
-							<option label="serienstream.to">serienstream.to</option>
-							<option label="Proxy Server">186.2.175.5</option>
+							<option label="S.to">s.to</option>
+							<option label="SerienStream.to">serienstream.to</option>
+							<option label="SerienStream.info(VPN)">serienstream.info</option>
+							<option label="Proxy Server">ProxyDomain</option>
 						</options>
 					<allowempty>true</allowempty>
 					</constraints>
