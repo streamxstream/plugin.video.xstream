@@ -908,7 +908,7 @@
 							<option label="S.to">s.to</option>
 							<option label="SerienStream.to">serienstream.to</option>
 							<option label="SerienStream.info(VPN)">serienstream.info</option>
-							<option label="Proxy Server">ProxyDomain</option>
+							<option label="Proxy Server">186.2.175.5</option>
 						</options>
 					<allowempty>true</allowempty>
 					</constraints>
