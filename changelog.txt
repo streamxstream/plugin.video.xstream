@@ -1,4 +1,13 @@
-[B]Version: 4.1.2 Nightly 9[/B]
+[B]Version: 4.1.2 Nightly 10[/B]
+
+02.09.2024
+
+- [KinoGer] Code Anpassungen
+- [PluginHandler] xStream Supportinformationen erweitert
+
+NEUSTART ERFORDERLICH!
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 29.08.2024
 
@@ -13,8 +22,6 @@
 - [Einstellungen] Divierse Anpassungen
 - [Sprachdateien] erweitert
 - [xStream] Anpassung PluginInfo
-
-ES IST ZWINGEND EIN NEUSTART ERFODERLICH!
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 

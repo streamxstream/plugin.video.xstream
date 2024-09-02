@@ -1163,8 +1163,8 @@ msgid "Domain used for the index page"
 msgstr "Verwendete Domain der Indexseite"
 
 msgctxt "#30425"
-msgid "Status code of the domain used"
-msgstr "Status Code der verwendeten Domain"
+msgid "Status of the domain used"
+msgstr "Status der verwendeten Domain"
 
 msgctxt "#30426"
 msgid "Global search of the index page"
@@ -1181,6 +1181,10 @@ msgstr "Domain wird permanent weitergeleitet"
 msgctxt "#30429"
 msgid "Domain is currently unavailable"
 msgstr "Domain ist derzeit nicht erreichbar"
+
+msgctxt "#30430"
+msgid "Index page in xStream"
+msgstr "Indexseite in xStream"
 
 ############### Scaper Language ###############
 

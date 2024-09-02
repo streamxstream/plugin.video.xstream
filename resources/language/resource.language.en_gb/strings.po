@@ -1163,7 +1163,7 @@ msgid "Domain used for the index page"
 msgstr ""
 
 msgctxt "#30425"
-msgid "Status code of the domain used"
+msgid "Status of the domain used"
 msgstr ""
 
 msgctxt "#30426"
@@ -1180,6 +1180,10 @@ msgstr ""
 
 msgctxt "#30429"
 msgid "Domain is currently unavailable"
+msgstr ""
+
+msgctxt "#30430"
+msgid "Index page in xStream"
 msgstr ""
 
 ############### Scaper Language ###############
