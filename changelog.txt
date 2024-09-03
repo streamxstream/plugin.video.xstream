@@ -1,11 +1,17 @@
-[B]Version: 4.1.2 Nightly 10[/B]
+[B]Version: 4.1.2 Nightly 11[/B]
+
+03.09.2024
+
+- [Einschalten] Neue Seite hinzugefügt
+- [Sprachdateien] Neue Elemente hinzugefügt
+- [Settings] Neue Seite hinzugefügt
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 02.09.2024
 
 - [KinoGer] Code Anpassungen
 - [PluginHandler] xStream Supportinformationen erweitert
-
-NEUSTART ERFORDERLICH!
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 
