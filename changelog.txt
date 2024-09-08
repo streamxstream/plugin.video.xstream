@@ -1,4 +1,14 @@
-[B]Version: 4.1.2 Nightly 11[/B]
+[B]Version: 4.1.2 Nightly 12[/B]
+
+08.09.2024
+
+- [HD Filme] Neue Seite hinzugefügt
+- [Topstreamfilm] Neue Seite hinzugefügt
+- [KinoGer] Veev.to hinzugefügt
+- [KKiste] Domain Anpassung
+
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 03.09.2024
 
