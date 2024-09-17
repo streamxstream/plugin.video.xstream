@@ -53,6 +53,11 @@
 					<default>False</default>
 					<control type="toggle"/>
 				</setting>
+				<setting id="xS_trailer" type="boolean" label="30026" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
 			</group>
 			<group id="hoster" label="30034">
 				<setting id="hosterSelect" type="string" label="30005" help="">
@@ -99,6 +104,11 @@
 				</setting>
 			</group>
 			<group id="networkSettings" label="30035">
+				<setting id="bypassDNSlock" type="boolean" label="30025" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
 				<setting id="cacheTime" type="integer" label="30006" help="">
 					<level>0</level>
 					<default>600</default>
@@ -312,20 +322,25 @@
 				</setting>
 				<setting id="plugin_aniworld.domain" type="string" label="30278" help="">
 					<level>3</level>
-					<default/>
+					<default>aniworld.to</default>
 					<constraints>
-						<allowempty>true</allowempty>
+						<options>
+							<option label="Aniworld.to">aniworld.to</option>
+							<option label="Aniworld.info(VPN)">www.aniworld.info</option>
+							<option label="Anicloud.io">anicloud.io</option>
+							<allowempty>true</allowempty>
+						</options>
 					</constraints>
 					<dependencies>
 						<dependency type="enable" operator="!is" setting="plugin_aniworld">false</dependency>
 						<dependency type="visible" operator="!is" setting="plugin_aniworld">false</dependency>
 					</dependencies>
-					<control type="edit" format="string">
+					<control type="spinner" format="string">
 						<heading>30278</heading>
 					</control>
 				</setting>
 			</group>
-			<group id="cinemathek" label="30720">
+			<!--group id="cinemathek" label="30720">
 				<setting id="plugin_cinemathek" type="boolean" label="30050" help="30411">
 					<level>0</level>
                     <default>True</default>
@@ -339,7 +354,6 @@
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
-				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
 				<setting id="plugin_cinemathek_checkDomain" type="boolean" label="30277">
 					<level>3</level>
 					<default>True</default>
@@ -363,11 +377,11 @@
 						<heading>30278</heading>
 					</control>
 				</setting>
-			</group>
+			</group-->
 			<group id="dokus4" label="30701">
 				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
 					<level>0</level>
-					<default>True</default>
+					<default>False</default>
 					<control type="toggle"/>
 				</setting>
 				<setting id="global_search_dokus4" type="boolean" label="30052">
@@ -377,6 +391,44 @@
 						<dependency type="enable" operator="!is" setting="plugin_dokus4">False</dependency>
 					</dependencies>
 					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="einschalten" label="30705">
+				<setting id="plugin_einschalten" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_einschalten" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_einschalten">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_einschalten_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_einschalten">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_einschalten">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_einschalten.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_einschalten">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_einschalten">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
 				</setting>
 			</group>
 			<group id="filmpalast" label="30702">
@@ -496,6 +548,45 @@
 					</control>
 				</setting>
 			</group>
+			<group id="plugin_hdfilme_1" label="30704">
+				<setting id="plugin_hdfilme_1" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_hdfilme_1" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme_1">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_hdfilme_1_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme_1">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_hdfilme_1">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_hdfilme_1.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_hdfilme_1">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_hdfilme_1">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
 			<group id="internetarchive" label="30712">
 				<setting id="plugin_internetarchive" type="boolean" label="30050" help="30411">
 					<level>0</level>
@@ -506,7 +597,7 @@
 					<level>0</level>
 					<default>False</default>
 					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_internetarchive">false</dependency>
+						<dependency type="enable" operator="!is" setting="plugin_internetarchive">False</dependency>
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
@@ -540,8 +631,8 @@
 					<default>kinoger.com</default>
 					<constraints>
 						<options>
-							<option label="kinoger.com">kinoger.com</option>
-							<option label="kinoger.to">kinoger.to</option>
+							<option label="KinoGer.com">kinoger.com</option>
+							<option label="KinoGer.to">kinoger.to</option>
 						</options>
 					<allowempty>true</allowempty>
 					</constraints>
@@ -872,8 +963,9 @@
 					<default>s.to</default>
 					<constraints>
 						<options>
-							<option label="s.to">s.to</option>
-							<option label="serienstream.to">serienstream.to</option>
+							<option label="S.to">s.to</option>
+							<option label="SerienStream.to">serienstream.to</option>
+							<option label="SerienStream.info(VPN)">serienstream.info</option>
 							<option label="Proxy Server">186.2.175.5</option>
 						</options>
 					<allowempty>true</allowempty>
@@ -881,6 +973,7 @@
 					<dependencies>
 						<dependency type="enable" operator="!is" setting="plugin_serienstream">false</dependency>
 						<dependency type="visible" operator="!is" setting="plugin_serienstream">false</dependency>
+						<dependency type="visible" setting="bypassDNSlock">false</dependency>
 					</dependencies>
 					<control type="spinner" format="string"/>
 				</setting>
@@ -919,6 +1012,45 @@
 						<dependency type="enable" operator="!is" setting="plugin_streamcloud">false</dependency>
 						<dependency type="visible" operator="!is" setting="plugin_streamcloud">false</dependency>
 					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="topstreamfilm" label="30707">
+				<setting id="plugin_topstreamfilm" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="global_search_topstreamfilm" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_topstreamfilm">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
+				<setting id="plugin_topstreamfilm_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_topstreamfilm">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_topstreamfilm">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_topstreamfilm.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_topstreamfilm">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_topstreamfilm">false</dependency>
+					</dependencies>>
 					<control type="edit" format="string">
 						<heading>30278</heading>
 					</control>
