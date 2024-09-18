@@ -1,35 +1,21 @@
-[B]Version: 4.1.2 Nightly 12[/B]
+[B]Version: 4.1.2 Release[/B]
 
-08.09.2024
+15.08.2024 - 17.09.2024
 
+- [HDFilme] Domain Anpassung
+- [KKiste] Domain Anpassung
 - [HD Filme] Neue Seite hinzugefügt
 - [Topstreamfilm] Neue Seite hinzugefügt
 - [KinoGer] Veev.to hinzugefügt
 - [KKiste] Domain Anpassung
-
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-03.09.2024
-
 - [Einschalten] Neue Seite hinzugefügt
 - [Sprachdateien] Neue Elemente hinzugefügt
 - [Settings] Neue Seite hinzugefügt
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-02.09.2024
-
 - [KinoGer] Code Anpassungen
 - [PluginHandler] xStream Supportinformationen erweitert
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-29.08.2024
-
 - [Tools] xStream Supportinformationen entfernt
 - [PluginHandler] xStream Supportinformationen hinzugefügt und erweitert,
-  CheckDomain überarbeitet
+	CheckDomain überarbeitet
 - [Alle Site-Plugins] Status Abfrage hinzugefügt
 - [KKiste] Domain Anpassung
 - [Movie2k] Anpassung Origin
@@ -38,50 +24,24 @@
 - [Einstellungen] Divierse Anpassungen
 - [Sprachdateien] erweitert
 - [xStream] Anpassung PluginInfo
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-25.08.2024
-
 - [Filmpalast] Anpassung Referrer für Swiftload
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-21.08.2024
-
 - [Cinemathek] Siteplugin in den Ruhestand geschickt, und den Hep in den Urlaub ;)
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-18.08.2024
-
 - [AniWorld] Domain Auswahl hinzugefügt
 - [HDFilme] Domain Anpassung
 - [Megakino] Anpassung Domain
 	Stream in HD(GX.Player) repariert
 - [Movie4k] Domain Anpassung
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-16.08.2024
-
 - [Serienstream] Redirect-Fehler in Verbindung mit [B]DNS Sperre umgehen[/B] behoben
 - [Serienstream] Fix für Abspielprobleme wenn [B]DNS Sperre umgehen[/B] aktiv
-
-[COLOR cyan]________________________________________________________________________________________[/COLOR]
-
-15.08.2024
-
 - [**Update**] Fix für nicht angezeigte Domains in den Einstellungen
-
 - [intern] Neuer Schalter in den Einstellungen/Allgemeines bei Netzwerk:
-  [B]DNS Sperre umgehen[/B]
-  Wird dieser Schalter aktiviert umgeht xStream die DNS Sperren bei folgenden Seiten:
-  Serienstream, Megakino, Filmpalast, Kinox (hat aktuell noch Cloudflare-Schutz).
-  Somit ist kein Umstellen im Router oder per APK etc. nötig.
-  Sollte es mit der neuen Funktion Probleme geben bitte wieder in den
-  Einstellungen/Aktualisierungen das Update auf Release stellen und xStream neu
-  starten, danach sind die Einstellungen wieder wie vorher.
+	[B]DNS Sperre umgehen[/B]
+	Wird dieser Schalter aktiviert umgeht xStream die DNS Sperren bei folgenden Seiten:
+	Serienstream, Megakino, Filmpalast, Kinox (hat aktuell noch Cloudflare-Schutz).
+	Somit ist kein Umstellen im Router oder per APK etc. nötig.
+	Sollte es mit der neuen Funktion Probleme geben bitte wieder in den
+	Einstellungen/Aktualisierungen das Update auf Release stellen und xStream neu
+	starten, danach sind die Einstellungen wieder wie vorher.
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 
