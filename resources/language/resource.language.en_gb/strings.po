@@ -99,14 +99,6 @@ msgctxt "#30025"
 msgid "Evade DNS lock"
 msgstr ""
 
-msgctxt "#30026"
-msgid "Enable Watch Trailer in the context menu"
-msgstr ""
-
-msgctxt "#30027"
-msgid "Watch trailer"
-msgstr ""
-
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr ""
@@ -1396,10 +1388,6 @@ msgctxt "#30549"
 msgid "Recently added movies"
 msgstr ""
 
-msgctxt "#30550"
-msgid "Movies of the week"
-msgstr ""
-
 ############### Site Plugins ###############
 
 msgctxt "#30700"
@@ -1431,7 +1419,7 @@ msgid "Kinokiste"
 msgstr ""
 
 msgctxt "#30707"
-msgid "Topstreamfilm"
+msgid ""
 msgstr ""
 
 msgctxt "#30708"
