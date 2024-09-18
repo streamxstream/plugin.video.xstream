@@ -26,7 +26,7 @@ Pull Requests einreichen oder Fehler melden könnt Ihr hier. Achtet bitte darauf
 
 Habt Ihr Fragen rund um xStream findet Ihr sicher eure Antworten in unserer FAQ.
 
-[![FaQ aufrufen](https://raw.githubusercontent.com/streamxstream/xStreamRepo/repo/config/faq.png)](https://github.com/streamxstream/plugin.video.xstream/wiki)
+[![FaQ aufrufen](https://raw.githubusercontent.com/streamxstream/xStreamRepo/repo/config/faq.png)](https://github.com/streamxstream/xStream-FAQ/blob/master/xStream_Anleitung_FAQ.md)
 
 ***
 
