@@ -95,6 +95,10 @@ msgctxt "#30024"
 msgid "Accounts"
 msgstr ""
 
+msgctxt "#30025"
+msgid "Evade DNS lock"
+msgstr ""
+
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr ""
@@ -910,7 +914,7 @@ msgid "Your ISP censors your Internet access!"
 msgstr ""
 
 msgctxt "#30261"
-msgid "To protect yourself from censorship, we recommend to change your DNS at your router and/or boxes to Google or Cloudflare - for both ipV4 and ipV6 protocols. Instructions can be found with a Google search, e.g. 'Change Fritzbox DNS Server'"
+msgid "To protect yourself from censorship, we recommend to use the new setting in xStream called 'Evade DNS lock' or change your DNS at your router and/or boxes to Google or Cloudflare - for both ipV4 and ipV6 protocols. Instructions can be found with a Google search, e.g. 'Change Fritzbox DNS Server'"
 msgstr ""
 
 msgctxt "#30262"
@@ -1108,6 +1112,78 @@ msgstr ""
 
 msgctxt "#30412"
 msgid "Video on demand services"
+msgstr ""
+
+msgctxt "#30413"
+msgid "[B]Device - Information:[/B]"
+msgstr ""
+
+msgctxt "#30414"
+msgid "[B]Plugin - Information:[/B]"
+msgstr ""
+
+msgctxt "#30415"
+msgid "Update enabled - Branch: "
+msgstr ""
+
+msgctxt "#30416"
+msgid "Update disabled - Branch: "
+msgstr ""
+
+msgctxt "#30417"
+msgid "xStream DNS Status: Bypass DNS block"
+msgstr ""
+
+msgctxt "#30418"
+msgid "enabled"
+msgstr ""
+
+msgctxt "#30419"
+msgid "disabled"
+msgstr ""
+
+msgctxt "#30420"
+msgid "[B]DNS - Information:[/B]"
+msgstr ""
+
+msgctxt "#30421"
+msgid "[B]Repository - Information:[/B]"
+msgstr ""
+
+msgctxt "#30422"
+msgid "[B]Index pages - Information:[/B]"
+msgstr ""
+
+msgctxt "#30423"
+msgid "Index page"
+msgstr ""
+
+msgctxt "#30424"
+msgid "Domain used for the index page"
+msgstr ""
+
+msgctxt "#30425"
+msgid "Status of the domain used"
+msgstr ""
+
+msgctxt "#30426"
+msgid "Global search of the index page"
+msgstr ""
+
+msgctxt "#30427"
+msgid "Domain works without problems"
+msgstr ""
+
+msgctxt "#30428"
+msgid "Domain is permanently forwarded"
+msgstr ""
+
+msgctxt "#30429"
+msgid "Domain is currently unavailable"
+msgstr ""
+
+msgctxt "#30430"
+msgid "Index page in xStream"
 msgstr ""
 
 ############### Scaper Language ###############
@@ -1308,6 +1384,14 @@ msgctxt "#30548"
 msgid "Search series"
 msgstr ""
 
+msgctxt "#30549"
+msgid "Recently added movies"
+msgstr ""
+
+msgctxt "#30550"
+msgid "Movies of the week"
+msgstr ""
+
 ############### Site Plugins ###############
 
 msgctxt "#30700"
@@ -1331,7 +1415,7 @@ msgid "HD-Filme"
 msgstr ""
 
 msgctxt "#30705"
-msgid ""
+msgid "Einschalten"
 msgstr ""
 
 msgctxt "#30706"
@@ -1339,7 +1423,7 @@ msgid "Kinokiste"
 msgstr ""
 
 msgctxt "#30707"
-msgid ""
+msgid "Topstreamfilm"
 msgstr ""
 
 msgctxt "#30708"
