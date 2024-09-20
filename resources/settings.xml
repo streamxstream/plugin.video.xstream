@@ -53,6 +53,11 @@
 					<default>False</default>
 					<control type="toggle"/>
 				</setting>
+				<setting id="xstream.trailer" type="boolean" label="30026" help="">
+					<level>0</level>
+					<default>False</default>
+					<control type="toggle"/>
+				</setting>
 			</group>
 			<group id="hoster" label="30034">
 				<setting id="hosterSelect" type="string" label="30005" help="">
