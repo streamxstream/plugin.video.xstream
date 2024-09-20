@@ -99,6 +99,13 @@ msgctxt "#30025"
 msgid "Evade DNS lock"
 msgstr "DNS Sperre umgehen"
 
+msgctxt "#30026"
+msgid "Enable Watch Trailer in the context menu"
+msgstr "Trailer ansehen im Kontextmenü aktivieren"
+
+msgctxt "#30027"
+msgid "Watch trailer"
+msgstr "Trailer ansehen"
 
 msgctxt "#30030"
 msgid "ResolveURL Updates"
