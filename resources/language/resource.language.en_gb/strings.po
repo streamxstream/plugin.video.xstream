@@ -1407,7 +1407,7 @@ msgid "Aniworld"
 msgstr ""
 
 msgctxt "#30701"
-msgid "Dokus4"
+msgid "Documentations"
 msgstr ""
 
 msgctxt "#30702"
@@ -1479,11 +1479,11 @@ msgid "KinoKiste"
 msgstr ""
 
 msgctxt "#30719"
-msgid ""
+msgid "Kids Tube"
 msgstr ""
 
 msgctxt "#30720"
-msgid "Cinemathek"
+msgid "FHD Filme"
 msgstr ""
 
 msgctxt "#30721"

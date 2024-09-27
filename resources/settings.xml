@@ -340,56 +340,10 @@
 					</control>
 				</setting>
 			</group>
-			<!--group id="cinemathek" label="30720">
-				<setting id="plugin_cinemathek" type="boolean" label="30050" help="30411">
-					<level>0</level>
-                    <default>True</default>
-					<control type="toggle"/>
-				</setting>				
-				<setting id="global_search_cinemathek" type="boolean" label="30052">
-					<level>0</level>
-					<default>True</default>
-					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_cinemathek">False</dependency>
-					</dependencies>
-					<control type="toggle"/>
-				</setting>
-				<setting id="plugin_cinemathek_checkDomain" type="boolean" label="30277">
-					<level>3</level>
-					<default>True</default>
-					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
-						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
-					</dependencies>
-					<control type="toggle"/>
-				</setting>
-				<setting id="plugin_cinemathek.domain" type="string" label="30278" help="">
-					<level>3</level>
-					<default/>
-					<constraints>
-						<allowempty>true</allowempty>
-					</constraints>
-					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
-						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
-					</dependencies>
-					<control type="edit" format="string">
-						<heading>30278</heading>
-					</control>
-				</setting>
-			</group-->
-			<group id="dokus4" label="30701">
-				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
+			<group id="dokus" label="30505">
+				<setting id="plugin_dokus" type="boolean" label="30050" help="30411">
 					<level>0</level>
 					<default>False</default>
-					<control type="toggle"/>
-				</setting>
-				<setting id="global_search_dokus4" type="boolean" label="30052">
-					<level>0</level>
-					<default>False</default>
-					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_dokus4">False</dependency>
-					</dependencies>
 					<control type="toggle"/>
 				</setting>
 			</group>
@@ -548,7 +502,7 @@
 					</control>
 				</setting>
 			</group>
-			<group id="plugin_hdfilme_1" label="30704">
+			<group id="plugin_hdfilme_1" label="30720">
 				<setting id="plugin_hdfilme_1" type="boolean" label="30050" help="30411">
 					<level>0</level>
                     <default>True</default>
@@ -599,6 +553,13 @@
 					<dependencies>
 						<dependency type="enable" operator="!is" setting="plugin_internetarchive">False</dependency>
 					</dependencies>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="kids_tube" label="30719">
+				<setting id="plugin_kids_tube" type="boolean" label="30050" help="30411">
+					<level>0</level>
+					<default>False</default>
 					<control type="toggle"/>
 				</setting>
 			</group>

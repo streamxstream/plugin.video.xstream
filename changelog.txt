@@ -1,4 +1,20 @@
-[B]Version: 4.1.3 Nightly1[/B]
+[B]Version: 4.1.3 Nightly2[/B]
+
+26.09.2024
+
+- [Dokus4.me] Seite entfernt
+- [Dokus] neuer Multiscraper mit Dokumentationen
+	Dokus4.me, Dokustreams.de, Dokuh.de, Videogold.de
+	Dokumentationen und Kanäle via Youtube
+	(Youtube Addon erforderlich, wird automatisch installiert)
+- [Moflix] neue Kollektionen hinzugefügt
+	PR beim Resolver Team eingereicht.
+- [Gui] Anpassung für Youtube Videos
+- THX an mr-evil1 für deine Unterstützung
+
+NEUSTART ERFORDERLICH !!!
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 18.09.2024
 
