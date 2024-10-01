@@ -168,12 +168,23 @@
 						<options>
 							<option label="Release">release</option>
 							<option label="Nightly (Kodi 20.x/21.x)">nightly</option>
+							<option label="Manuell">manuel</option>
 						</options>
 					</constraints>
 					<dependencies>
 						<dependency type="visible" setting="githubUpdateXstream">true</dependency>
 					</dependencies>
 					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="xstream.manuell.update" type="action" label="30028" help="">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.xstream/?function=devUpdates)</data>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+					<dependencies>
+						<dependency type="visible" setting="xstream.branch">manuel</dependency>
+					</dependencies>
 				</setting>
 			</group>
 			<group id="resolver.updates" label="30030">
@@ -345,6 +356,16 @@
 					<level>0</level>
 					<default>False</default>
 					<control type="toggle"/>
+				</setting>
+				<setting id="dokus.youtube" type="action" label="30431" help="">
+					<level>0</level>
+					<data>Addon.OpenSettings(plugin.video.youtube)</data>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+					<dependencies>
+						<dependency type="visible" setting="plugin_dokus">true</dependency>
+					</dependencies>
 				</setting>
 			</group>
 			<group id="einschalten" label="30705">
@@ -561,6 +582,16 @@
 					<level>0</level>
 					<default>False</default>
 					<control type="toggle"/>
+				</setting>
+				<setting id="kids_tube.youtube" type="action" label="30431" help="">
+					<level>0</level>
+					<data>Addon.OpenSettings(plugin.video.youtube)</data>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+					<dependencies>
+						<dependency type="visible" setting="plugin_kids_tube">true</dependency>
+					</dependencies>
 				</setting>
 			</group>
 			<group id="plugin_kinoger" label="30717">

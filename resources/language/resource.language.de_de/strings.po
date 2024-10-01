@@ -107,6 +107,10 @@ msgctxt "#30027"
 msgid "Watch trailer"
 msgstr "Trailer ansehen"
 
+msgctxt "#30028"
+msgid "Start manual update (one-time)"
+msgstr "Manuelle Aktualisierung (einmalig) starten"
+
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr "ResolveURL Aktualisierung"
@@ -1192,6 +1196,10 @@ msgstr "Domain ist derzeit nicht erreichbar"
 msgctxt "#30430"
 msgid "Index page in xStream"
 msgstr "Indexseite in xStream"
+
+msgctxt "#30431"
+msgid "[COLORred][I]Youtube required! Please create API key and enter it here.[/I][/COLOR]"
+msgstr "[COLORred][I]Youtube erforderlich! Bitte API Key erstellen und hier eintragen.[/I][/COLOR]"
 
 ############### Scaper Language ###############
 
