@@ -1,4 +1,20 @@
-[B]Version: 4.1.3 Nightly3[/B]
+[B]Version: 4.1.3 Nightly4[/B]
+
+04.10.2024
+
+- [GUI] Anpassung für Trailer Modul für Serien
+- [HDFilme] Domain Aktualisierung, Anpassung für Trailer Modul
+- [Kids Tube] Channel Liederkiste hinzugefügt
+- [Kinokiste] Anpassung für Trailer Modul
+- [KKiste] Domain Aktualisierung, Anpassung für Trailer Modul
+- [Megakino] Domain Aktualisierung, Anpassung für Trailer Modul
+	Kollektionen hinzugefügt
+- [Movie2k] Anpassung für Trailer Modul
+- [Movie4k] Domain Aktualisierung
+- [xCine] Anpassung für Trailer Modul
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
+
 
 01.10.2024
 
