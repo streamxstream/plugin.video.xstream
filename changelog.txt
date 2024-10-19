@@ -1,4 +1,28 @@
-[B]Version: 4.1.3 Nightly4[/B]
+[B]Version: 4.1.3 Nightly5[/B]
+
+19.10.2024
+
+- [Aniworld] Anpassung Filme
+    Überarbeitung Sprachelemente
+    Überarbeitung Qualität
+- [Filmpalast] Überarbeitung Sprachelemente English
+- [Flimmerstube] Seitensuche hinzugefügt
+- [FHD Filme] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
+- [GUI] Element Seitensuche hinzugefügt, Keyboard Heading hinzugefügt
+- [Kinoger] Seitensuche hinzugefügt, Hoster Anpassung
+- [Kinokiste] Seitensuche hinzugefügt, Anzeige Qualität
+- [KKiste] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
+- [Megakino] Seitensuche hinzugefügt, Anzeige Hoster
+- [SerienStream]Anzeige Qualität, Sprache, Sub und Hoster
+    Domain .info enfernt und .stream hinzugefügt
+- [Streamcloud] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
+- [Topstreamfilm] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
+- [xCine] Anzeige Qualität und Hoster
+- [Alle VoD´s] Serien repariert, Anzeige Qualität und Hostername
+
+NEUSTART ERFORDERLICH !!!
+
+[COLOR cyan]________________________________________________________________________________________[/COLOR]
 
 04.10.2024
 
@@ -14,7 +38,6 @@
 - [xCine] Anpassung für Trailer Modul
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
-
 
 01.10.2024
 
