@@ -107,6 +107,10 @@ msgctxt "#30027"
 msgid "Watch trailer"
 msgstr "Trailer ansehen"
 
+msgctxt "#30028"
+msgid "Start manual update (one-time)"
+msgstr "Manuelle Aktualisierung (einmalig) starten"
+
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr "ResolveURL Aktualisierung"
@@ -992,6 +996,33 @@ msgctxt "#30278"
 msgid "Currently used domain"
 msgstr "Derzeitig verwendete Domain"
 
+msgctxt "#30279"
+msgid "[I]Show next page  >>>[/I]"
+msgstr "[I]Nächste Seite anzeigen  >>>[/I]"
+
+msgctxt "#30280"
+msgid "Please enter the search term."
+msgstr "Bitte den Suchbegriff eingeben."
+
+msgctxt "#30281"
+msgid "Please enter the movie or series."
+msgstr "Bitte den Film oder die Serie eingeben."
+
+msgctxt "#30282"
+msgid "Please choose a number between 1 and "
+msgstr "Bitte wähle eine Zahl zwischen 1 und "
+
+msgctxt "#30284"
+msgid "[I]Start page search  >>> [/I] Page "
+msgstr "[I]Seitensuche starten  >>> [/I] Seite "
+
+msgctxt "#30285"
+msgid " of "
+msgstr " von "
+
+msgctxt "#30286"
+msgid " Pages [I]<<<[/I]"
+msgstr " Seiten [I]<<<[/I]"
 
 msgctxt "#30302"
 msgid "Seasons german"
@@ -1192,6 +1223,10 @@ msgstr "Domain ist derzeit nicht erreichbar"
 msgctxt "#30430"
 msgid "Index page in xStream"
 msgstr "Indexseite in xStream"
+
+msgctxt "#30431"
+msgid "[COLORred][I]Youtube required! Please create API key and enter it here.[/I][/COLOR]"
+msgstr "[COLORred][I]Youtube erforderlich! Bitte API Key erstellen und hier eintragen.[/I][/COLOR]"
 
 ############### Scaper Language ###############
 
@@ -1406,8 +1441,8 @@ msgid "Aniworld"
 msgstr ""
 
 msgctxt "#30701"
-msgid "Dokus4"
-msgstr ""
+msgid "Documentations"
+msgstr "Dokumentationen"
 
 msgctxt "#30702"
 msgid "FilmPalast"
@@ -1478,11 +1513,11 @@ msgid "KinoKiste"
 msgstr ""
 
 msgctxt "#30719"
-msgid ""
+msgid "Kids Tube"
 msgstr ""
 
 msgctxt "#30720"
-msgid "Cinemathek"
+msgid "FHD Filme"
 msgstr ""
 
 msgctxt "#30721"
