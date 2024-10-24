@@ -107,10 +107,6 @@ msgctxt "#30027"
 msgid "Watch trailer"
 msgstr ""
 
-msgctxt "#30028"
-msgid "Start manual update (one-time)"
-msgstr ""
-
 msgctxt "#30030"
 msgid "ResolveURL Updates"
 msgstr ""
@@ -997,37 +993,6 @@ msgctxt "#30278"
 msgid "Currently used domain"
 msgstr ""
 
-msgctxt "#30279"
-msgid "[I]Show next page  >>>[/I]"
-msgstr ""
-
-msgctxt "#30280"
-msgid "Please enter the search term."
-msgstr ""
-
-msgctxt "#30281"
-msgid "Please enter the movie or series."
-msgstr ""
-
-msgctxt "#30282"
-msgid "Please choose a number between 1 and "
-msgstr ""
-
-msgctxt "#30283"
-msgid "Please choose a number between 1 and "
-msgstr ""
-
-msgctxt "#30284"
-msgid "[I]Start page search  >>> [/I] Page "
-msgstr ""
-
-msgctxt "#30285"
-msgid " of "
-msgstr ""
-
-msgctxt "#30286"
-msgid " Pages [I]<<<[/I]"
-msgstr ""
 
 msgctxt "#30302"
 msgid "Seasons german"
@@ -1227,10 +1192,6 @@ msgstr ""
 
 msgctxt "#30430"
 msgid "Index page in xStream"
-msgstr ""
-
-msgctxt "#30431"
-msgid "[COLORred][I]Youtube required! Please create API key and enter it here.[/I][/COLOR]"
 msgstr ""
 
 ############### Scaper Language ###############
@@ -1446,7 +1407,7 @@ msgid "Aniworld"
 msgstr ""
 
 msgctxt "#30701"
-msgid "Documentations"
+msgid "Dokus4"
 msgstr ""
 
 msgctxt "#30702"
@@ -1518,11 +1479,11 @@ msgid "KinoKiste"
 msgstr ""
 
 msgctxt "#30719"
-msgid "Kids Tube"
+msgid ""
 msgstr ""
 
 msgctxt "#30720"
-msgid "FHD Filme"
+msgid "Cinemathek"
 msgstr ""
 
 msgctxt "#30721"
