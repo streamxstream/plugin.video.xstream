@@ -168,23 +168,12 @@
 						<options>
 							<option label="Release">release</option>
 							<option label="Nightly (Kodi 20.x/21.x)">nightly</option>
-							<option label="Manuell">manuel</option>
 						</options>
 					</constraints>
 					<dependencies>
 						<dependency type="visible" setting="githubUpdateXstream">true</dependency>
 					</dependencies>
 					<control type="spinner" format="string"/>
-				</setting>
-				<setting id="xstream.manuell.update" type="action" label="30028" help="">
-					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.xstream/?function=devUpdates)</data>
-					<control type="button" format="action">
-						<close>true</close>
-					</control>
-					<dependencies>
-						<dependency type="visible" setting="xstream.branch">manuel</dependency>
-					</dependencies>
 				</setting>
 			</group>
 			<group id="resolver.updates" label="30030">
@@ -351,28 +340,55 @@
 					</control>
 				</setting>
 			</group>
-			<group id="dokus" label="30505">
-				<setting id="plugin_dokus" type="boolean" label="30050" help="30411">
+			<!--group id="cinemathek" label="30720">
+				<setting id="plugin_cinemathek" type="boolean" label="30050" help="30411">
+					<level>0</level>
+                    <default>True</default>
+					<control type="toggle"/>
+				</setting>				
+				<setting id="global_search_cinemathek" type="boolean" label="30052">
+					<level>0</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">False</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_cinemathek_checkDomain" type="boolean" label="30277">
+					<level>3</level>
+					<default>True</default>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
+					</dependencies>
+					<control type="toggle"/>
+				</setting>
+				<setting id="plugin_cinemathek.domain" type="string" label="30278" help="">
+					<level>3</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable" operator="!is" setting="plugin_cinemathek">false</dependency>
+						<dependency type="visible" operator="!is" setting="plugin_cinemathek">false</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30278</heading>
+					</control>
+				</setting>
+			</group-->
+			<group id="dokus4" label="30701">
+				<setting id="plugin_dokus4" type="boolean" label="30050" help="30411">
 					<level>0</level>
 					<default>False</default>
 					<control type="toggle"/>
 				</setting>
-				<setting id="dokus.youtube" type="action" label="30431" help="">
-					<level>0</level>
-					<data>Addon.OpenSettings(plugin.video.youtube)</data>
-					<control type="button" format="action">
-						<close>true</close>
-					</control>
-					<dependencies>
-						<dependency type="visible" setting="plugin_dokus">true</dependency>
-					</dependencies>
-				</setting>
-				<setting id="global_search_dokus" type="boolean" label="30052">
+				<setting id="global_search_dokus4" type="boolean" label="30052">
 					<level>0</level>
 					<default>False</default>
-					<visible>False</visible><!-- versteckt -->
 					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_dokus">False</dependency>
+						<dependency type="enable" operator="!is" setting="plugin_dokus4">False</dependency>
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
@@ -532,7 +548,7 @@
 					</control>
 				</setting>
 			</group>
-			<group id="plugin_hdfilme_1" label="30720">
+			<group id="plugin_hdfilme_1" label="30704">
 				<setting id="plugin_hdfilme_1" type="boolean" label="30050" help="30411">
 					<level>0</level>
                     <default>True</default>
@@ -586,32 +602,6 @@
 					<control type="toggle"/>
 				</setting>
 			</group>
-			<group id="kids_tube" label="30719">
-				<setting id="plugin_kids_tube" type="boolean" label="30050" help="30411">
-					<level>0</level>
-					<default>False</default>
-					<control type="toggle"/>
-				</setting>
-				<setting id="kids_tube.youtube" type="action" label="30431" help="">
-					<level>0</level>
-					<data>Addon.OpenSettings(plugin.video.youtube)</data>
-					<control type="button" format="action">
-						<close>true</close>
-					</control>
-					<dependencies>
-						<dependency type="visible" setting="plugin_kids_tube">true</dependency>
-					</dependencies>
-				</setting>
-				<setting id="global_search_kids_tube" type="boolean" label="30052">
-					<level>0</level>
-					<default>False</default>
-					<visible>False</visible><!-- versteckt -->
-					<dependencies>
-						<dependency type="enable" operator="!is" setting="plugin_kids_tube">False</dependency>
-					</dependencies>
-					<control type="toggle"/>
-				</setting>
-			</group>
 			<group id="plugin_kinoger" label="30717">
 				<setting id="plugin_kinoger" type="boolean" label="30050" help="30411">
 					<level>0</level>
@@ -658,7 +648,7 @@
 					<level>0</level>
                     <default>True</default>
 					<control type="toggle"/>
-				</setting>
+				</setting>				
 				<setting id="global_search_kinokiste" type="boolean" label="30052">
 					<level>0</level>
 					<default>True</default>
@@ -692,7 +682,7 @@
 					</control>
 				</setting>
 			</group>
-            <!-- <group id="plugin_kinox" label="30708">
+            <group id="plugin_kinox" label="30708">
 				<setting id="plugin_kinox" type="boolean" label="30050" help="30411">
 					<level>0</level>
                     <default>True</default>
@@ -706,7 +696,7 @@
 					</dependencies>
 					<control type="toggle"/>
 				</setting>
-
+				<!-- Domain Überprüfung mit automatischer und manueller Anpassung -->
 				<setting id="plugin_kinox_checkDomain" type="boolean" label="30277">
 					<level>3</level>
 					<default>True</default>
@@ -730,7 +720,7 @@
 						<heading>30278</heading>
 					</control>
 				</setting>
-			</group>-->
+			</group>
 		</category>
 		<!-- Kategorie Indexseiten 1 (30094) und Indexseiten 2 (30095) werden vom PluginHandler gesetzt und sind somit kein fester Bestandteil der settings.xml -->
 		<category id="indexsite2" label="30095">
@@ -975,7 +965,7 @@
 						<options>
 							<option label="S.to">s.to</option>
 							<option label="SerienStream.to">serienstream.to</option>
-							<option label="SerienStream.stream(VPN)">serienstream.stream</option>
+							<option label="SerienStream.info(VPN)">serienstream.info</option>
 							<option label="Proxy Server">186.2.175.5</option>
 						</options>
 					<allowempty>true</allowempty>

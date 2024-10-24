@@ -1,53 +1,47 @@
-[B]Version: 4.1.3 Release[/B]
+[B]Version: 4.1.2 Release[/B]
 
-18.09.2024 - 19.10.2024
+15.08.2024 - 17.09.2024
 
-- [Aniworld] Anpassung Filme
-    Überarbeitung Sprachelemente
-    Überarbeitung Qualität
-- [Filmpalast] Überarbeitung Sprachelemente English
-- [Flimmerstube] Seitensuche hinzugefügt
-- [FHD Filme] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
-- [GUI] Element Seitensuche hinzugefügt, Keyboard Heading hinzugefügt
-- [Kinoger] Seitensuche hinzugefügt, Hoster Anpassung
-- [Kinokiste] Seitensuche hinzugefügt, Anzeige Qualität
-- [KKiste] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
-- [Megakino] Seitensuche hinzugefügt, Anzeige Hoster
-- [SerienStream]Anzeige Qualität, Sprache, Sub und Hoster
-    Domain .info enfernt und .stream hinzugefügt
-- [Streamcloud] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
-- [Topstreamfilm] Seitensuche hinzugefügt, Anzeige Qualität und Hoster
-- [xCine] Anzeige Qualität und Hoster
-- [Alle VoD´s] Serien repariert, Anzeige Qualität und Hostername
-- [GUI] Anpassung für Trailer Modul für Serien
-- [HDFilme] Domain Aktualisierung, Anpassung für Trailer Modul
-- [Kids Tube] Channel Liederkiste hinzugefügt
-- [Kinokiste] Anpassung für Trailer Modul
-- [KKiste] Domain Aktualisierung, Anpassung für Trailer Modul
-- [Megakino] Domain Aktualisierung, Anpassung für Trailer Modul
-	Kollektionen hinzugefügt
-- [Movie2k] Anpassung für Trailer Modul
-- [Movie4k] Domain Aktualisierung
-- [xCine] Anpassung für Trailer Modul
-- [Dokus] Seite überarbeitet
-- [Kids Tube] Seite hinzugefügt THX an mr-evil1
-- [Youtube_Fix] temporärer Key hinzugefügt THX an mr-evil1
-- [Requesthandler] Erweiterung dummer Sonderzeichen in Links
-- [Setting] Einmaliges manuelles Update in den Einstellungen verfügbar
-	Nur setzen wenn es auch benötigt wird!
-Für die Siteplugins Dokumentationen und Kids Tube ist das YouTube Addon erforderlich!
-Dafür wird ein API Key benötigt! Nähere Informationen findest du in der Wiki!
-- [Dokus4.me] Seite entfernt
-- [Dokus] neuer Multiscraper mit Dokumentationen
-	Dokus4.me, Dokustreams.de, Dokuh.de, Videogold.de
-	Dokumentationen und Kanäle via Youtube
-	(Youtube Addon erforderlich, wird automatisch installiert)
-- [Moflix] neue Kollektionen hinzugefügt
-	PR beim Resolver Team eingereicht.
-- [Gui] Anpassung für Youtube Videos
-- THX an mr-evil1 für deine Unterstützung
-- [xStream Trailer] Aktivierung in den Einstellungen möglich THX mr-evil1
-	(Youtube Addon erforderlich, wird automatisch installiert)
+- [HDFilme] Domain Anpassung
+- [KKiste] Domain Anpassung
+- [HD Filme] Neue Seite hinzugefügt
+- [Topstreamfilm] Neue Seite hinzugefügt
+- [KinoGer] Veev.to hinzugefügt
+- [KKiste] Domain Anpassung
+- [Einschalten] Neue Seite hinzugefügt
+- [Sprachdateien] Neue Elemente hinzugefügt
+- [Settings] Neue Seite hinzugefügt
+- [KinoGer] Code Anpassungen
+- [PluginHandler] xStream Supportinformationen erweitert
+- [Tools] xStream Supportinformationen entfernt
+- [PluginHandler] xStream Supportinformationen hinzugefügt und erweitert,
+	CheckDomain überarbeitet
+- [Alle Site-Plugins] Status Abfrage hinzugefügt
+- [KKiste] Domain Anpassung
+- [Movie2k] Anpassung Origin
+- [Movie4k] Anpassung Domain
+- [SerienStream] Neue Domain hinzugefügt
+- [Einstellungen] Divierse Anpassungen
+- [Sprachdateien] erweitert
+- [xStream] Anpassung PluginInfo
+- [Filmpalast] Anpassung Referrer für Swiftload
+- [Cinemathek] Siteplugin in den Ruhestand geschickt, und den Hep in den Urlaub ;)
+- [AniWorld] Domain Auswahl hinzugefügt
+- [HDFilme] Domain Anpassung
+- [Megakino] Anpassung Domain
+	Stream in HD(GX.Player) repariert
+- [Movie4k] Domain Anpassung
+- [Serienstream] Redirect-Fehler in Verbindung mit [B]DNS Sperre umgehen[/B] behoben
+- [Serienstream] Fix für Abspielprobleme wenn [B]DNS Sperre umgehen[/B] aktiv
+- [**Update**] Fix für nicht angezeigte Domains in den Einstellungen
+- [intern] Neuer Schalter in den Einstellungen/Allgemeines bei Netzwerk:
+	[B]DNS Sperre umgehen[/B]
+	Wird dieser Schalter aktiviert umgeht xStream die DNS Sperren bei folgenden Seiten:
+	Serienstream, Megakino, Filmpalast, Kinox (hat aktuell noch Cloudflare-Schutz).
+	Somit ist kein Umstellen im Router oder per APK etc. nötig.
+	Sollte es mit der neuen Funktion Probleme geben bitte wieder in den
+	Einstellungen/Aktualisierungen das Update auf Release stellen und xStream neu
+	starten, danach sind die Einstellungen wieder wie vorher.
 
 [COLOR cyan]________________________________________________________________________________________[/COLOR]
 
